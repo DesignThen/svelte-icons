@@ -25,7 +25,7 @@ _Find the original repository for Heroicons on Github: [tailwindlabs/heroicons](
 
 ```html
 <script>
-	import { AcademicCap } from "$lib/outline";
+	import { AcademicCap } from "@inqling/svelte-heroicons";
 </script>
 
 <style>
@@ -37,6 +37,27 @@ _Find the original repository for Heroicons on Github: [tailwindlabs/heroicons](
 
 <div class="icon"><AcademicCap /></div>
 ```
+
+importing icons from `@inqling/svelte-heroicons` will use solid icons by default. You can manually import outline icons from `@inqling/svelte-heroicons/outline`.
+Example:
+
+```html
+<script lang="ts">
+	import { AcademicCap } from "@inqling/svelte-heroicons/outline";
+</script>
+```
+
+To improve performance and bundle size, you can import icons directly: `@inqling/svelte-heroicons/svg/<type>/<icon>.svelte`
+
+Example:
+
+```html
+<script lang="ts">
+	import Icon from "@inqling/svelte-heroicons/svg/outline/academic-cap.svelte";
+</script>
+```
+
+## Styling
 
 -   The icon will scale in size so that the height of the icon is the current font-size.
 -   The icon will inherit the current text color.
