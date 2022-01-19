@@ -1,6 +1,6 @@
 {
-	"name": "svelte-heroicons",
-	"version": "0.0.1",
+	"name": "@inqling/svelte-heroicons",
+	"version": "0.0.2",
 	"author": {
 		"name": "Ollie Taylor <OllieJT>",
 		"email": "ollie@inqling.studio",
@@ -11,6 +11,7 @@
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
 		"package": "svelte-kit package",
+		"publish": "svelte-kit package && npm publish ./package --access=public",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -27,8 +28,14 @@
 		"svelte-check": "^2.2.6",
 		"svelte-icon": "^1.2.3",
 		"svelte-preprocess": "^4.9.4",
+		"svelte2tsx": "^0.4.14",
 		"tslib": "^2.3.1",
 		"typescript": "^4.4.3"
+	},
+	"homepage": "https://github.com/Inqling/svelte-heroicons#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Inqling/svelte-heroicons.git"
 	},
 	"type": "module"
 }

@@ -8,6 +8,13 @@
   An set of 450+ free MIT-licensed high-quality SVG icons for you to use in your web projects. <br>Available as an unofficial <b>Svelte</b> library. Browse the complete set at <a href="https://heroicons.com"><strong>Heroicons.com &rarr;</strong></a>
 </p>
 
+<p align="center">
+    <a href="https://github.com/tailwindlabs/heroicons/releases"><img src="https://img.shields.io/npm/v/@inqling/svelte-heroicons
+" alt="Latest Release"></a>
+    <a href="https://github.com/tailwindlabs/heroicons/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/@inqling/svelte-heroicons
+.svg" alt="License"></a>
+</p>
+
 ## Why this package?
 
 Copying SVG code into your project can become tedious and messy if you don't need to edit the SVG markup. This library simply makes it easier to import each icon and have it scale based on it's inherited font-size.
