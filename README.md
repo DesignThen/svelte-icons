@@ -41,6 +41,11 @@ _Find the original repository for Heroicons on Github: [tailwindlabs/heroicons](
 -   The icon will scale in size so that the height of the icon is the current font-size.
 -   The icon will inherit the current text color.
 
+## To-do
+
+-   [ ] Add SVG component that loads paths dynamically.
+-   [ ] Include a component to dynamically set the icon. Ex `<Icon type="icon-name" />`.
+
 ## License
 
 This library is MIT licensed.
