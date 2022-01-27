@@ -9,7 +9,7 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
+		"build": "svelte-check --tsconfig ./tsconfig.json && svelte-kit build",
 		"package": "svelte-kit package",
 		"publish": "svelte-kit package && npm publish ./package --access=public",
 		"preview": "svelte-kit preview",
