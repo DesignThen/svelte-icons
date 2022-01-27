@@ -1,11 +1,11 @@
 # @inqling/svelte-icons
 
 <p align="center">
-  <img src="https://github.com/Inqling/svelte-heroicons/blob/main/static/banner.png" alt="Inqling Svelte Icons" width="640" height="164">
+  <img src="https://github.com/Inqling/svelte-heroicons/blob/main/static/banner.png" alt="Inqling Svelte Icons" width="830" height="212">
 </p>
 
 <p align="center">
-  Combines <a href="https://heroicons.com"><strong>Heroicons &rarr;</strong></a> and <a href="https://simpleicons.org/"><strong>Simple Icons &rarr;</strong></a> and makes them easier to use as SVG components in your svelte project.
+  Combines <a href="https://heroicons.com"><strong>Heroicons &rarr;</strong></a> & <a href="https://simpleicons.org/"><strong>Simple Icons &rarr;</strong></a> for seamless use as SVG components in your svelte project.
 </p>
 
 <p align="center">
