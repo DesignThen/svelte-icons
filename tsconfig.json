@@ -36,8 +36,11 @@
 		"noImplicitReturns": true,
 		"noFallthroughCasesInSwitch": true,
 
+		"types": ["node", "svelte"],
+
 		"paths": {
-			"$lib/*": ["src/lib/*"]
+			"$lib/*": ["src/lib/*"],
+			"$lib": ["src/lib"]
 		}
 	},
 	"exclude": ["node_modules/", ".svelte-kit/", "svelte.config.js", "build/"],
