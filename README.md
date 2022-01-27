@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/@inqling/svelte-icons/releases">
-		<img src="https://img.shields.io/npm/v/@inqling/svelte-heroicons" alt="Latest Release">
+    <a href="https://www.npmjs.com/package/@inqling/svelte-icons">
+		<img src="https://img.shields.io/npm/v/@inqling/svelte-icons" alt="Latest Release">
 	</a>
     <a href="https://github.com/Inqling/svelte-icons/blob/main/LICENSE">
 		<img src="https://img.shields.io/npm/l/@inqling/svelte-icons.svg" alt="License">
@@ -27,6 +27,18 @@ This library adapts the following repositories for use in Svelte:
 -   Simple Icons: [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
 
 ## Usage
+
+### Install
+
+```bash
+# npm
+npm i @inqling/svelte-icons
+```
+
+```bash
+#yarn
+yarn add @inqling/svelte-icons
+```
 
 ### Basic Use Case
 
