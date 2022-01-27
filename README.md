@@ -64,8 +64,7 @@ Example:
 
 ## To-do
 
--   [ ] Add SVG component that loads paths dynamically.
--   [ ] Include a component to dynamically set the icon. Ex `<Icon type="icon-name" />`.
+-   [ ] Add a script to import and format future icon updates in [heroicons](https://github.com/tailwindlabs/heroicons) and [simple-icons](https://github.com/simple-icons/simple-icons)
 
 ## License
 
