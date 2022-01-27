@@ -1,0 +1,7 @@
+<script>
+	import { iconProps } from "$lib/icon-props";
+</script>
+
+<svg {...iconProps.solid} {...$$props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	<title>Radar</title><path d="M12 0L2.197 23.975 12 19.952 21.803 24z" />
+</svg>

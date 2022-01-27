@@ -1,6 +1,8 @@
 <script>
 	import { ArrowCircleUp, ArrowCircleUp_O } from "$lib";
 	import Annotation from "$lib/outline/annotation.svelte";
+	import Twitter from "$lib/brand/twitter.svelte";
+	import Apache from "$lib/brand/apacheairflow.svelte";
 </script>
 
 <style>
@@ -23,3 +25,9 @@
 	<pre>"@inqling/svelte-icons/outline/annotation.svelte"</pre>
 </code>
 <div class="icon"><Annotation /></div>
+
+<code>
+	<pre>"@inqling/svelte-icons/brand/twitter.svelte"</pre>
+</code>
+<div class="icon"><Twitter /></div>
+<div class="icon"><Apache /></div>
