@@ -1,7 +1,7 @@
 # @inqling/svelte-icons
 
 <p align="center">
-  <img src="https://github.com/Inqling/svelte-heroicons/blob/main/static/banner.png" alt="Inqling Svelte Icons" width="830" height="212">
+  <img src="https://github.com/Inqling/svelte-icons/blob/main/static/banner.png" alt="Inqling Svelte Icons" width="830" height="212">
 </p>
 
 <p align="center">
@@ -9,11 +9,11 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/@inqling/svelte-heroicons/releases">
+    <a href="https://github.com/@inqling/svelte-icons/releases">
 		<img src="https://img.shields.io/npm/v/@inqling/svelte-heroicons" alt="Latest Release">
 	</a>
     <a href="https://github.com/Inqling/svelte-icons/blob/main/LICENSE">
-		<img src="https://img.shields.io/npm/l/@inqling/svelte-heroicons.svg" alt="License">
+		<img src="https://img.shields.io/npm/l/@inqling/svelte-icons.svg" alt="License">
 	</a>
 </p>
 
