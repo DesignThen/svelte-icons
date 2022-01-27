@@ -1,6 +1,6 @@
 {
-	"name": "@inqling/svelte-heroicons",
-	"version": "0.0.2",
+	"name": "@inqling/svelte-icons",
+	"version": "0.1.0",
 	"author": {
 		"name": "Ollie Taylor <OllieJT>",
 		"email": "ollie@inqling.studio",
@@ -32,10 +32,10 @@
 		"tslib": "^2.3.1",
 		"typescript": "^4.4.3"
 	},
-	"homepage": "https://github.com/Inqling/svelte-heroicons#readme",
+	"homepage": "https://github.com/Inqling/svelte-icons#readme",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Inqling/svelte-heroicons.git"
+		"url": "https://github.com/Inqling/svelte-icons.git"
 	},
 	"type": "module"
 }
