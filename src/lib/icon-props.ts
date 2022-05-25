@@ -1,7 +1,7 @@
 const shared: svelte.JSX.SVGProps<SVGSVGElement> = {
 	role: "img",
 	"aria-hidden": "true",
-	style: `width: auto; height: 1em; display: inline-block;`,
+	style: `width: auto; display: inline-block;`,
 	// viewBox: "0 0 24 24",
 };
 
