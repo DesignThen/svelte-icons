@@ -1,10 +1,10 @@
 {
+	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
-		"moduleResolution": "node",
-		"module": "es2020",
-		"lib": ["es2020"],
-		"target": "es2019",
+		"incremental": false,
 		"noEmit": true,
+		"strict": true,
+
 		/**
 			svelte-preprocess cannot figure out whether you have a value or a type, so tell TypeScript
 			to enforce using \`import type\` instead of \`import\` for Types.
@@ -19,29 +19,20 @@
 		"sourceMap": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,
-		"baseUrl": ".",
 		"allowJs": true,
 		"checkJs": true,
 
 		/* type-checking */
+		"forceConsistentCasingInFileNames": true,
 		"strictNullChecks": true,
 		"strictFunctionTypes": true,
-		"noImplicitAny": true,
-		"noImplicitThis": true,
-
-		/* clean-code */
-		"forceConsistentCasingInFileNames": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"noImplicitReturns": true,
 		"noFallthroughCasesInSwitch": true,
-
-		"types": ["node", "svelte"],
-
-		"paths": {
-			"$lib/*": ["src/lib/*"],
-			"$lib": ["src/lib"]
-		}
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": false
 	},
 	"exclude": ["node_modules/", ".svelte-kit/", "svelte.config.js", "build/"],
 	"include": ["**/*.d.ts", "**/*.js", "**/*.ts", "**/*.svelte"]

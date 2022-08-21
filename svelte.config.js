@@ -1,6 +1,5 @@
+import adapter from "@sveltejs/adapter-static";
 import preprocess from "svelte-preprocess";
-import adapter from "@sveltejs/adapter-auto";
-import path from "path";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -11,15 +10,8 @@ const config = {
 	preprocess: [preprocess({})],
 
 	kit: {
-		// hydrate the <div id="svelte"> element in src/app.html
 		adapter: adapter({}),
-		vite: {
-			resolve: {
-				alias: {
-					$lib: path.resolve("src/lib"),
-				},
-			},
-		},
+		prerender: { default: true },
 	},
 };
 
