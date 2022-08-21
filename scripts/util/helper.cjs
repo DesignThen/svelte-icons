@@ -16,17 +16,19 @@ function capitalize(word) {
 /**
  * @param  {string} pathname
  * @param  {string} [extension]
+ * @param  {string} [prefix]
  */
-function toFilename(pathname, extension) {
+function toFilename(pathname, extension, prefix) {
 	const withoutPath = pathname.split("/").pop();
 	const withoutExtension = withoutPath?.split(".").shift();
 	const asFilename = withoutExtension?.toLowerCase().replace(/\s/g, "-");
+	const pre = prefix ? `${prefix}-` : "";
 
 	if (!asFilename) throw new Error(`Could not format filename: ${pathname}`);
 	else if (extension) {
-		return asFilename + `.${extension}`;
+		return pre + asFilename + `.${extension}`;
 	} else {
-		return asFilename;
+		return pre + asFilename;
 	}
 }
 
@@ -42,9 +44,11 @@ function toTitleCase(value) {
 
 /**
  * @param  {string} value
+ * @param  {string} [prefix]
  */
-function toComponentName(value) {
-	const name = toTitleCase(value).split(".").shift();
+function toComponentName(value, prefix) {
+	const pre = prefix ? `${capitalize(prefix)} ` : "";
+	const name = pre + toTitleCase(value).split(".").shift();
 	const withoutSpaces = name?.replace(/\s/g, "");
 	if (!withoutSpaces) throw new Error(`Could not format component name: ${value}`);
 	return withoutSpaces;
