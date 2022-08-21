@@ -42,7 +42,6 @@ folders.forEach((pathname) => {
 });
 
 files.forEach(({ _input, _output, _parent, name, pathname }) => {
-	console.log({ _input, _output, _parent, name, pathname });
 	const svgContent = fs.readFileSync(_input, { encoding: "utf-8" });
 
 	const componentContent = useSvg(svgContent);
