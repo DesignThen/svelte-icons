@@ -36,8 +36,6 @@
 		"noImplicitReturns": true,
 		"noFallthroughCasesInSwitch": true,
 
-		"types": ["node", "svelte/types"],
-
 		"paths": {
 			"$lib/*": ["src/lib/*"],
 			"$lib": ["src/lib"]
