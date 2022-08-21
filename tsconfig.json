@@ -32,8 +32,7 @@
 		"noImplicitThis": true,
 		"noUncheckedIndexedAccess": true,
 		"noUnusedLocals": true,
-		"noUnusedParameters": false,
-
+		"noUnusedParameters": false
 	},
 	"exclude": ["node_modules/", ".svelte-kit/", "svelte.config.js", "build/"],
 	"include": ["**/*.d.ts", "**/*.js", "**/*.ts", "**/*.svelte"]
