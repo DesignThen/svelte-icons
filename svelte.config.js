@@ -13,6 +13,7 @@ const config = {
 		adapter: adapter({}),
 		prerender: { default: true },
 	},
+	package: {},
 };
 
 export default config;

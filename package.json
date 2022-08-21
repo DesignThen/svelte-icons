@@ -1,6 +1,6 @@
 {
 	"name": "@inqling/svelte-icons",
-	"version": "0.2.2",
+	"version": "1.0.8",
 	"license": "MIT",
 	"author": {
 		"name": "Ollie Taylor <OllieJT>",
@@ -16,8 +16,8 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "svelte-check --tsconfig ./tsconfig.json && vite build",
-		"package": "svelte-kit package",
-		"publish": "svelte-kit package && npm publish ./package --access=public",
+		"package": "svelte-package",
+		"publish": "./scripts/publish.sh",
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -38,6 +38,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^1.0.0-next.39",
 		"@sveltejs/kit": "^1.0.0-next.428",
+		"@sveltejs/package": "^1.0.0-next.1",
 		"@types/node": "^18.7.8",
 		"cheerio": "^1.0.0-rc.12",
 		"degit": "^2.8.4",
