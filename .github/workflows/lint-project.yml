@@ -29,5 +29,5 @@ jobs:
                   node-version: 16
                   cache: "yarn"
             - run: yarn
-            - run: svelte-kit sync
+            - run: ls ./svelte-kit
             - run: tsc --pretty --noImplicitAny --noEmit
