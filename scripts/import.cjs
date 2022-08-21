@@ -76,7 +76,16 @@ const to_do = tasks.length;
 console.log(`🚧 ${to_do} tasks to complete...`);
 
 tasks.forEach(({ content, pathname }, ix) => {
-	fs.writeFileSync(pathname, content, { encoding: "utf-8", flag: "w" });
+	const parent = files.getParent(pathname);
+	try {
+		fs.mkdirSync(parent, { recursive: true });
+		fs.writeFileSync(pathname, content, { encoding: "utf-8", flag: "w" });
+	} catch (err) {
+		console.error(`⛔️ Failed on [${ix + 1}/${to_do}]`);
+		console.log("⛔️  parent: ", parent);
+		console.log("⛔️  pathname: ", pathname);
+		throw err;
+	}
 });
 
 console.log(`✅ ${to_do} tasks finished!`);

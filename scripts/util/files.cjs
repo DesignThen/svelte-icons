@@ -27,6 +27,16 @@ function getSourceFolders(pathname) {
 
 /**
  * @param  {string} pathname
+ * @returns {string}
+ */
+function getParent(pathname) {
+	const parts = pathname.split("/");
+	parts.pop();
+	return parts.join("/");
+}
+
+/**
+ * @param  {string} pathname
  * @returns {string[]}
  */
 function getSvgAssets(pathname) {
@@ -61,7 +71,7 @@ function handleBarrelFile(name, tasks, isRoot = false) {
 				const line = `export * as ${componentName} from "${componentPath}"`;
 				return line;
 			} else {
-				const componentName = util.toComponentName(t.pathname);
+				const componentName = util.toComponentName(t.pathname, name);
 				const componentPath = util.toRelativePath(t.pathname);
 				const line = `export { default as ${componentName} } from "${componentPath}"`;
 				return line;
@@ -81,6 +91,7 @@ function handleBarrelFile(name, tasks, isRoot = false) {
 }
 
 module.exports = {
+	getParent,
 	getSourceFolders,
 	getSvgAssets,
 	handleBarrelFile,
