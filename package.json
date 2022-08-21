@@ -17,7 +17,6 @@
 		"dev": "vite dev",
 		"build": "svelte-check --tsconfig ./tsconfig.json && vite build",
 		"package": "svelte-package",
-		"publish": "./scripts/publish.sh",
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
