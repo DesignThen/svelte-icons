@@ -121,7 +121,12 @@ This library is MIT licensed.
 ### Updating Heroicons
 
 1. Make sure you have dependencies installed with `yarn install`.
-2. Run `yarn heroicons` to clone and import the latest heroicons from [tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons/tree/master/src).
+2. Run `yarn heroicons` to clone and import the latest heroicons from [@tailwindlabs: heroicons/src](https://github.com/tailwindlabs/heroicons/tree/master/src).
+
+### Updating Simple Icons
+
+1. Make sure you have dependencies installed with `yarn install`.
+2. Run `yarn simple-icons` to clone and import the latest heroicons from [@simple-icons: simple-icons/icons](https://github.com/simple-icons/simple-icons/tree/develop/icons).
 
 ### Adding new icons
 
