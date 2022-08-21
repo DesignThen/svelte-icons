@@ -27,6 +27,9 @@
 		"heroicons:clone": "./scripts/clone-heroicons.sh",
 		"heroicons:import": "yarn heroicons:clone && yarn import-svg",
 		"heroicons": "yarn heroicons:import",
+		"simple-icons:clone": "./scripts/clone-simple-icons.sh",
+		"simple-icons:import": "yarn simple-icons:clone && yarn import-svg",
+		"simple-icons": "yarn simple-icons:import",
 		"postinstall": "svelte-kit sync"
 	},
 	"lint-staged": {
