@@ -1,12 +1,18 @@
 {
 	"name": "@inqling/svelte-icons",
 	"version": "0.2.2",
+	"license": "MIT",
 	"author": {
 		"name": "Ollie Taylor <OllieJT>",
 		"email": "ollie@inqling.studio",
 		"url": "https://inqling.studio/"
 	},
-	"license": "MIT",
+	"homepage": "https://github.com/inqling/svelte-icons#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/inqling/svelte-icons.git"
+	},
+	"type": "module",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-check --tsconfig ./tsconfig.json && svelte-kit build",
@@ -22,19 +28,13 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
-		"prettier": "^2.7.1",
 		"prettier-plugin-svelte": "^2.7.0",
-		"svelte": "^3.49.0",
+		"prettier": "^2.7.1",
 		"svelte-check": "^2.8.1",
 		"svelte-preprocess": "^4.10.7",
+		"svelte": "^3.49.0",
 		"svelte2tsx": "^0.5.14",
 		"tslib": "^2.4.0",
 		"typescript": "^4.7.4"
-	},
-	"homepage": "https://github.com/inqling/svelte-icons#readme",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/inqling/svelte-icons.git"
-	},
-	"type": "module"
+	}
 }
