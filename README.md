@@ -115,3 +115,40 @@ You can import solid and outline heroicons by default. Outline icons end in `_O`
 ## License
 
 This library is MIT licensed.
+
+## Updating and adding to the package
+
+### Updating Heroicons
+
+1. Make sure you have dependencies installed with `yarn install`.
+2. Run `yarn update` to clone and import the latest heroicons from [tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons/tree/master/src).
+
+### Adding new icons
+
+1. Place all SVG icons in `/import` with one level of folder structure.
+    - you should not nest svg's more than one level deep
+    - only svg's are imported
+    - svg code is not validated
+    - svg attributes will be standardized
+2. run `yarn util:import` to convert all SVG files to svelte components.
+3. Generated files can be found at `/src/lib/...`.
+
+### Reference
+
+##### Example folder structure
+
+```
+import/
+	heroicons-solid/
+		icon1.svg
+		icon2.svg
+		...
+	heroicons-outline/
+		icon1.svg
+		icon2.svg
+		...
+	.gitkeep
+	README.md (you're here)
+package.json
+...
+```
