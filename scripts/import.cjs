@@ -1,9 +1,9 @@
 const fs = require("fs");
 const path = require("path");
-const util = require("./util.cjs");
+const util = require("./util/helper.cjs");
 
 /**
- * @typedef {import('./types').FileMetadata} FileMetadata
+ * @typedef {import('./util/types').FileMetadata} FileMetadata
  */
 
 const path_to_import = path.resolve(__dirname, "../import");
