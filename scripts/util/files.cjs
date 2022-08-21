@@ -67,7 +67,7 @@ function handleBarrelFile(name, tasks, isRoot = false) {
 				return line;
 			}
 		})
-		.join(";");
+		.join(";\n");
 
 	if (!pathname) throw new Error(`Couldn't get pathname for barrel file: ${name}`);
 
