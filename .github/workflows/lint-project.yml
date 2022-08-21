@@ -20,7 +20,7 @@ jobs:
                   only_changed: true
                   commit_message: "prettier: formatted code"
                   prettier_plugins: "prettier-plugin-svelte"
-    Svelte Check:
+    SvelteCheck:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
