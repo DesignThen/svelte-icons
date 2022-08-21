@@ -24,6 +24,8 @@
 		"lint": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
 		"ts": "tsc --pretty --noImplicitAny --noEmit",
 		"util:import": "node ./scripts/import.cjs",
+		"util:clone": "./scripts/clone.sh",
+		"update": "yarn util:clone && yarn:util:import && yarn format",
 		"postinstall": "svelte-kit sync"
 	},
 	"lint-staged": {
@@ -34,6 +36,7 @@
 		"@sveltejs/kit": "^1.0.0-next.428",
 		"@types/node": "^18.7.8",
 		"cheerio": "^1.0.0-rc.12",
+		"degit": "^2.8.4",
 		"husky": "^8.0.1",
 		"lint-staged": "^13.0.3",
 		"prettier": "^2.7.1",
