@@ -24,7 +24,7 @@ svg/
 			icon1.svg
 			icon2.svg
 			...
-		...
+		.gitkeep
 	.gitkeep
 	import.cjs
 	README.md (you're here)
