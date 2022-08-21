@@ -1,11 +1,12 @@
 const fs = require("fs");
 const path = require("path");
+const util = require("./util.cjs");
 
 /**
  * @typedef {import('./types').FileMetadata} FileMetadata
  */
 
-const path_to_import = path.resolve(__dirname, "import");
+const path_to_import = path.resolve(__dirname, "../import");
 const path_to_components = path.resolve(__dirname, "../src/lib");
 
 /** @type {string[]} **/
@@ -59,9 +60,9 @@ function getFileMetadata(filePath) {
 	if (!inputPathname) throw new Error(`Couldn't get FILE from path: ${filePath}`);
 
 	const componentParentPath = path.join(path_to_components, inputParentPathname);
-	const componentFileName = pathnameToFilename(inputPathname) + ".svelte";
+	const componentFileName = util.toFilename(inputPathname, "svelte");
 	const componentFilePath = path.join(componentParentPath, componentFileName);
-	const componentName = filenameToComponentName(componentFileName);
+	const componentName = util.toComponentName(inputPathname);
 
 	return {
 		_input: filePath,
@@ -70,30 +71,4 @@ function getFileMetadata(filePath) {
 		pathname: componentFileName,
 		name: componentName,
 	};
-}
-
-/**
- * @param  {string} pathname
- */
-function pathnameToFilename(pathname) {
-	const withoutExtension = pathname.split(".")[0];
-	if (!withoutExtension) throw new Error(`Could not format name: ${name}`);
-	return withoutExtension.toLowerCase().replace(/\s/g, "-");
-}
-
-/**
- * @param  {string} filename
- */
-function filenameToComponentName(filename) {
-	const name = filename.replace(/-/g, " ");
-	return toTitleCase(name).replace(/\s/g, "");
-}
-
-/**
- * @param  {string} str
- */
-function toTitleCase(str) {
-	return str.replace(/\w\S*/g, (txt) => {
-		return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-	});
 }

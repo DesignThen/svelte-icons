@@ -2,7 +2,7 @@
 
 ### Instructions
 
-1. Place all SVG icons here, in `/svg/import` in the desired folder structure.
+1. Place all SVG icons here, in `/import` in the desired folder structure.
     - you should not nest svg's more than one level deep
     - only svg's are imported
     - svg code is not validated
@@ -14,18 +14,17 @@
 ##### Example folder structure
 
 ```
-svg/
-	import/
-		heroicons-solid/
-			icon1.svg
-			icon2.svg
-			...
-		heroicons-outline/
-			icon1.svg
-			icon2.svg
-			...
-		.gitkeep
+import/
+	heroicons-solid/
+		icon1.svg
+		icon2.svg
+		...
+	heroicons-outline/
+		icon1.svg
+		icon2.svg
+		...
 	.gitkeep
-	import.cjs
 	README.md (you're here)
+package.json
+...
 ```
