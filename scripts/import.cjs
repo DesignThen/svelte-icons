@@ -3,52 +3,83 @@
 const fs = require("fs");
 const path = require("path");
 const util = require("./util/helper.cjs");
+const files = require("./util/files.cjs");
 const useSvg = require("./util/use-svg.cjs");
 
 /**
  * @typedef {import('./util/types').FileMetadata} FileMetadata
+ * @typedef {import('./util/types').Task} Task
+ * @typedef {import('./util/types').Barrel} Barrel
  */
 
 const path_to_import = path.resolve(__dirname, "../import");
 const path_to_components = path.resolve(__dirname, "../src/lib");
 
 /** @type {string[]} **/
-let folders = [];
+let folders = files.getSourceFolders(path_to_import);
 
-/** @type {FileMetadata[]} **/
-let files = [];
+/** @type {Task[]} **/
+let tasks = [];
 
-fs.readdirSync(path_to_import, { withFileTypes: true, encoding: "utf-8" }).forEach((value) => {
-	if (!value.isDirectory()) return;
-	else folders.push(path.join(path_to_import, value.name));
-});
+/** @type {Barrel} **/
+let barrel = {};
 
-console.log("Importing from: ", folders);
+/** @type {Task[]} **/
+let root = [];
 
+console.log("🚧 Importing from: ", folders);
+
+console.log(`🚧 building task list...`);
+
+// 1. Handle tasks for SVG files
 folders.forEach((pathname) => {
-	const dir = fs.readdirSync(pathname, {
-		withFileTypes: true,
-		encoding: "utf-8",
-	});
+	const assets = files.getSvgAssets(pathname);
 
-	dir.forEach((value) => {
-		if (!value.isFile() || !value.name.endsWith(".svg")) return;
-		else {
-			const filepath = path.join(pathname, value.name);
-			const metadata = getFileMetadata(filepath);
-			files.push(metadata);
+	assets.forEach((filepath) => {
+		const metadata = getFileMetadata(filepath);
+		const contentSvg = fs.readFileSync(metadata._input, { encoding: "utf-8" });
+		const contentSvelte = useSvg(contentSvg);
+
+		/** @type {Task} **/
+		const task = {
+			pathname: metadata._output,
+			content: contentSvelte,
+		};
+		tasks.push(task);
+
+		const asset_parent_folder = metadata._parent.split("/").pop() || "";
+		const prev = barrel[asset_parent_folder];
+		if (prev) {
+			barrel[asset_parent_folder] = [...prev, task];
+		} else {
+			barrel[asset_parent_folder] = [task];
 		}
 	});
 });
 
-files.forEach(({ _input, _output, _parent, name, pathname }) => {
-	const svgContent = fs.readFileSync(_input, { encoding: "utf-8" });
+// 2. Handle tasks for barrel files
 
-	const componentContent = useSvg(svgContent);
+Object.keys(barrel).forEach((key) => {
+	const value = barrel[key] || [];
+	const task = files.handleBarrelFile(key, value);
 
-	fs.mkdirSync(_parent, { recursive: true });
-	fs.writeFileSync(_output, componentContent, { encoding: "utf-8", flag: "w+" });
+	tasks.push(task);
+	root.push(task);
 });
+
+const rootBarelFile = files.handleBarrelFile("lib", root, true);
+tasks.push(rootBarelFile);
+
+// 3. Run all tasks
+
+const to_do = tasks.length;
+console.log(`🚧 ${to_do} tasks to complete...`);
+
+tasks.forEach(({ content, pathname }, ix) => {
+	fs.writeFileSync(pathname, content, { encoding: "utf-8", flag: "w" });
+});
+
+console.log(`✅ ${to_do} tasks finished!`);
 
 // Utilities
 
@@ -67,13 +98,10 @@ function getFileMetadata(filePath) {
 	const componentParentPath = path.join(path_to_components, inputParentPathname);
 	const componentFileName = util.toFilename(inputPathname, "svelte");
 	const componentFilePath = path.join(componentParentPath, componentFileName);
-	const componentName = util.toComponentName(inputPathname);
 
 	return {
 		_input: filePath,
 		_output: componentFilePath,
 		_parent: componentParentPath,
-		pathname: componentFileName,
-		name: componentName,
 	};
 }

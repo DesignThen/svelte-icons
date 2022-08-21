@@ -1,3 +1,5 @@
+const path = require("path");
+
 /**
  * @param  {string} word
  */
@@ -47,10 +49,20 @@ function toComponentName(value) {
 	if (!withoutSpaces) throw new Error(`Could not format component name: ${value}`);
 	return withoutSpaces;
 }
+/**
+ * @param  {string} pathname
+ */
+function toRelativePath(pathname) {
+	const srcPath = pathname.split("src/lib/").pop();
+	if (!srcPath) throw new Error(`Could not handle relative path: ${path}`);
+	const relativePath = path.join(`$lib`, srcPath);
+	return relativePath;
+}
 
 module.exports = {
 	capitalize,
 	toComponentName,
 	toFilename,
+	toRelativePath,
 	toTitleCase,
 };

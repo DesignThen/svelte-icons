@@ -1,7 +1,14 @@
+type Pathname = string;
+
 export type FileMetadata = {
-	_input: string;
-	_output: string;
-	_parent: string;
-	pathname: string;
-	name: string;
+	_input: Pathname;
+	_output: Pathname;
+	_parent: Pathname;
 };
+
+export type Task = {
+	pathname: Pathname;
+	content: string;
+};
+
+export type Barrel = Record<Pathname, Task[]>;
