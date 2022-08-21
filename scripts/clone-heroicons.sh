@@ -8,8 +8,12 @@ REPO_branch="master"
 echo "🚧 cloning from :: https://github.com/$REPO/tree/$REPO_branch/$REPO_FOLDER"
 echo "🚧 cloning to :: $FOLDER"
 
-mkdir -p $FOLDER && cd $FOLDER && degit github:$REPO/$REPO_FOLDER --force
+mkdir -p $FOLDER
 
-echo "✅ done"
+echo "✅ added folders :: $FOLDER"
+
+cd $FOLDER && degit github:$REPO/$REPO_FOLDER --force
+
+echo "✅ done :: "
 
 ls $FOLDER

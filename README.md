@@ -121,7 +121,7 @@ This library is MIT licensed.
 ### Updating Heroicons
 
 1. Make sure you have dependencies installed with `yarn install`.
-2. Run `yarn update` to clone and import the latest heroicons from [tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons/tree/master/src).
+2. Run `yarn heroicons` to clone and import the latest heroicons from [tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons/tree/master/src).
 
 ### Adding new icons
 
@@ -130,7 +130,7 @@ This library is MIT licensed.
     - only svg's are imported
     - svg code is not validated
     - svg attributes will be standardized
-2. run `yarn util:import` to convert all SVG files to svelte components.
+2. run `yarn import-svg` to convert all SVG files to svelte components.
 3. Generated files can be found at `/src/lib/...`.
 
 ### Reference
