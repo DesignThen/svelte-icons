@@ -19,8 +19,7 @@ jobs:
                   prettier_options: --write **/*.{ts,svelte,cjs,json,css,html}
                   only_changed: true
                   commit_message: "prettier: formatted code"
-                  prettier_plugins:
-                      - prettier-plugin-svelte
+                  prettier_plugins: "prettier-plugin-svelte"
     Svelte Check:
         runs-on: ubuntu-latest
         steps:
