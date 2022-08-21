@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const util = require("./util/helper.cjs");
+const useSvg = require("./util/use-svg.cjs");
 
 /**
  * @typedef {import('./util/types').FileMetadata} FileMetadata
@@ -41,8 +42,11 @@ folders.forEach((pathname) => {
 files.forEach(({ _input, _output, _parent, name, pathname }) => {
 	console.log({ _input, _output, _parent, name, pathname });
 	const svgContent = fs.readFileSync(_input, { encoding: "utf-8" });
+
+	const componentContent = useSvg(svgContent);
+
 	fs.mkdirSync(_parent, { recursive: true });
-	fs.writeFileSync(_output, svgContent, { encoding: "utf-8", flag: "w+" });
+	fs.writeFileSync(_output, componentContent, { encoding: "utf-8", flag: "w+" });
 });
 
 // Utilities
