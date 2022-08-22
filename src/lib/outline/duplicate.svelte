@@ -1,18 +1,18 @@
-<script>
-	import { iconProps } from "$lib/icon-props";
-</script>
-
 <svg
-	xmlns="http://www.w3.org/2000/svg"
+	width="24"
+	height="24"
 	viewBox="0 0 24 24"
 	fill="none"
-	{...iconProps.outline}
-	{...$$props}
+	xmlns="http://www.w3.org/2000/svg"
+	style="width: auto; display: inline-block;"
+	aria-hidden="true"
+	role="img"
 >
 	<path
+		d="M8 16H6C4.89543 16 4 15.1046 4 14V6C4 4.89543 4.89543 4 6 4H14C15.1046 4 16 4.89543 16 6V8M10 20H18C19.1046 20 20 19.1046 20 18V10C20 8.89543 19.1046 8 18 8H10C8.89543 8 8 8.89543 8 10V18C8 19.1046 8.89543 20 10 20Z"
+		stroke="currentColor"
+		stroke-width="2"
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		stroke-width="2"
-		d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
 	/>
 </svg>

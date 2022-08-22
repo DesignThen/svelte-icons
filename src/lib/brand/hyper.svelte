@@ -1,10 +1,10 @@
-<script>
-	import { iconProps } from "$lib/icon-props";
-</script>
-
-<svg {...iconProps.solid} {...$$props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-	<title>Hyper</title>
-	<path
+<svg
+	viewBox="0 0 24 24"
+	xmlns="http://www.w3.org/2000/svg"
+	style="width: auto; display: inline-block;"
+	aria-hidden="true"
+	role="img"
+	><title>Hyper</title><path
 		d="M13.565 17.91H24v1.964H13.565zm-3.201-5.09l-9.187 8.003 2.86-7.004L0 11.179l9.187-8.002-3.11 7.451z"
-	/>
-</svg>
+	/></svg
+>

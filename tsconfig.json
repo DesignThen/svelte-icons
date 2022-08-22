@@ -35,5 +35,5 @@
 		"noUnusedParameters": false
 	},
 	"exclude": ["node_modules/", ".svelte-kit/", "svelte.config.js", "build/"],
-	"include": ["**/*.d.ts", "**/*.js", "**/*.ts", "**/*.svelte"]
+	"include": ["**/*.d.ts", "**/*.cjs", "**/*.ts", "**/*.svelte"]
 }

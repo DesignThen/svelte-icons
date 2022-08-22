@@ -1,10 +1,10 @@
-<script>
-	import { iconProps } from "$lib/icon-props";
-</script>
-
-<svg {...iconProps.solid} {...$$props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-	<title>Bookmeter</title>
-	<path
+<svg
+	viewBox="0 0 24 24"
+	xmlns="http://www.w3.org/2000/svg"
+	style="width: auto; display: inline-block;"
+	aria-hidden="true"
+	role="img"
+	><title>Bookmeter</title><path
 		d="M.678 14.262h6.089V24H.678v-9.738zm8.215 9.717h6.089V7.11H8.893v16.869zM17.234 0v24h6.089V0h-6.089z"
-	/>
-</svg>
+	/></svg
+>

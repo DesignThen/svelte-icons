@@ -40,30 +40,25 @@ npm i @inqling/svelte-icons
 yarn add @inqling/svelte-icons
 ```
 
-### Basic Use Case
+### Importing Icons
 
-```html
-<script>
-	import Annotation from "$lib/outline/annotation.svelte";
-	import Upload from "$lib/solid/upload.svelte";
-	import Twitter from "$lib/brand/twitter.svelte";
-</script>
+#### Import from the package
 
-<style>
-	.icon {
-		font-size: 40px;
-		color: red;
-	}
-</style>
+```js
+// Import from barrel files
+import { BrandGithub } from "$lib/brand";
+import { OutlinePlusCircle } from "$lib/outline";
+import { SolidStar } from "$lib/solid";
 
-<div class="icon">
-	<Annotation />
-	<Upload />
-	<Twitter />
-</div>
+// Import specific icons (Recommended)
+import Github from "$lib/outline/annotation.svelte";
+import PlusCircle from "$lib/outline/plus-circle.svelte";
+import Star from "$lib/solid/star.svelte";
 ```
 
 ### Passed Props
+
+Icons should behave as you expect
 
 ```html
 <script>
@@ -81,37 +76,79 @@ yarn add @inqling/svelte-icons
 <OnePassword class="locked" />
 ```
 
-### Default Export
-
-You can import solid and outline heroicons by default. Outline icons end in `_O`.
-
-```html
-<script>
-	import { ArrowCircleUp, ArrowCircleUp_O } from "$lib";
-</script>
-
-<style>
-	.icon {
-		font-size: 40px;
-		color: red;
-	}
-</style>
-
-<div class="icon">
-	<ArrowCircleUp />
-	<ArrowCircleUp_O />
-</div>
-```
-
-## Styling
+### Styling
 
 -   The icon will scale in size so that the height of the icon is the current font-size.
 -   The icon will inherit the current text color.
 
-## To-do
+##### Example: The icon inherits text styles from it's parent styles
 
--   [ ] Add a script to import and format future icon updates in [heroicons](https://github.com/tailwindlabs/heroicons) and [simple-icons](https://github.com/simple-icons/simple-icons)
+```html
+<script>
+	import Github from "$lib/outline/annotation.svelte";
+</script>
+
+<style>
+	.button {
+		background: black;
+		color: white;
+		font-size: 16px;
+		padding: 12px 20px;
+	}
+
+	.button :global(svg) {
+		// The svg icon inherits the color and styles from it's sibling text elements.
+		// Here, the font-size for the icon overrides it's inherited styles.
+		// The height of the icon will be 24px and the width will adjust automatically.
+		font-size: 24px;
+	}
+</style>
+
+<button on:click={() => console.log("Hi mum!")}><Github class="locked" /> Login with GitHub</button>
+```
 
 ## License
 
 This library is MIT licensed.
+
+## Updating and adding to the package
+
+### Updating Heroicons
+
+1. Make sure you have dependencies installed with `yarn install`.
+2. Run `yarn heroicons` to clone and import the latest heroicons from [@tailwindlabs: heroicons/src](https://github.com/tailwindlabs/heroicons/tree/master/src).
+
+### Updating Simple Icons
+
+1. Make sure you have dependencies installed with `yarn install`.
+2. Run `yarn simple-icons` to clone and import the latest heroicons from [@simple-icons: simple-icons/icons](https://github.com/simple-icons/simple-icons/tree/develop/icons).
+
+### Adding new icons
+
+1. Place all SVG icons in `/import` with one level of folder structure.
+    - you should not nest svg's more than one level deep
+    - only svg's are imported
+    - svg code is not validated
+    - svg attributes will be standardized
+2. run `yarn import-svg` to convert all SVG files to svelte components.
+3. Generated files can be found at `/src/lib/...`.
+
+### Reference
+
+##### Example folder structure
+
+```
+import/
+	heroicons-solid/
+		icon1.svg
+		icon2.svg
+		...
+	heroicons-outline/
+		icon1.svg
+		icon2.svg
+		...
+	.gitkeep
+	README.md (you're here)
+package.json
+...
+```

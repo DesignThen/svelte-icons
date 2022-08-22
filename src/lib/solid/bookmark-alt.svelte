@@ -1,11 +1,17 @@
-<script>
-	import { iconProps } from "$lib/icon-props";
-</script>
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" {...iconProps.solid} {...$$props}>
+<svg
+	width="20"
+	height="20"
+	viewBox="0 0 20 20"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+	style="width: auto; display: inline-block;"
+	aria-hidden="true"
+	role="img"
+>
 	<path
 		fill-rule="evenodd"
-		d="M3 5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm11 1H6v8l4-2 4 2V6z"
 		clip-rule="evenodd"
+		d="M3 5C3 3.89543 3.89543 3 5 3H15C16.1046 3 17 3.89543 17 5V15C17 16.1046 16.1046 17 15 17H5C3.89543 17 3 16.1046 3 15V5ZM14 6H6V14L10 12L14 14V6Z"
+		fill="currentColor"
 	/>
 </svg>
