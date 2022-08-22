@@ -3,5 +3,6 @@
 	xmlns="http://www.w3.org/2000/svg"
 	style="width: auto; display: inline-block;"
 	aria-hidden="true"
-	role="img"><title>CrateDB</title><path d="M18 9V3h-6v6H0v6h6v6h6v-6h12V9h-6z" /></svg
+	role="img"
+	{...$$restProps}><title>CrateDB</title><path d="M18 9V3h-6v6H0v6h6v6h6v-6h12V9h-6z" /></svg
 >

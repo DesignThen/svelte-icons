@@ -90,21 +90,25 @@ Icons should behave as you expect
 
 <style>
   .button {
-    background: black;
-    color: white;
-    font-size: 16px;
-    padding: 12px 20px;
+    // Icons inherit the text color from text styles
+    color: purple;
+  }
+
+  .icon {
+    // You can bass classes to icons
+    width: 24px;
+    height: 24px;
   }
 
   .button :global(svg) {
-    // The svg icon inherits the color and styles from it's sibling text elements.
-    // Here, the font-size for the icon overrides it's inherited styles.
-    // The height of the icon will be 24px and the width will adjust automatically.
-    font-size: 24px;
+    // You can target the svg element directly
+    display: inline-block
   }
 </style>
 
-<button on:click={() => console.log("Hi mum!")}><Github class="locked" /> Login with GitHub</button>
+<button on:click={() => console.log("Hi mum!")}>
+  <Github class="icon" />
+</button>
 ```
 
 ## License

@@ -7,6 +7,7 @@
 	style="width: auto; display: inline-block;"
 	aria-hidden="true"
 	role="img"
+	{...$$restProps}
 >
 	<path d="M12 14L21 9L12 4L3 9L12 14Z" />
 	<path
