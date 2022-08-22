@@ -28,7 +28,13 @@ function useSvg(svg) {
 	el.attr("aria-hidden", "true");
 	el.attr("role", "img");
 
-	const htmlElement = el.toString().replace(/#([0-9a-f]{6})/gi, "currentColor");
+	el.attr("PROPS", "PROPS");
+
+	const htmlElement = el
+		.toString()
+		.replace(/#([0-9a-f]{6})/gi, "currentColor")
+		.replace(`PROPS="PROPS"`, "{...$$$restProps}");
+	// .replace("<svg", '<script lang="ts"></script><svg');
 
 	return htmlElement;
 }

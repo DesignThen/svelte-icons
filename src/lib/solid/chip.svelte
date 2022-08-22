@@ -7,6 +7,7 @@
 	style="width: auto; display: inline-block;"
 	aria-hidden="true"
 	role="img"
+	{...$$restProps}
 >
 	<path d="M13 7H7V13H13V7Z" fill="currentColor" />
 	<path

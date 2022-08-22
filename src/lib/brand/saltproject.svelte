@@ -3,5 +3,7 @@
 	xmlns="http://www.w3.org/2000/svg"
 	style="width: auto; display: inline-block;"
 	aria-hidden="true"
-	role="img"><title>Salt Project</title><path d="M0 12v10.56h12L18 12h6V1.44H12L6 12Z" /></svg
+	role="img"
+	{...$$restProps}
+	><title>Salt Project</title><path d="M0 12v10.56h12L18 12h6V1.44H12L6 12Z" /></svg
 >

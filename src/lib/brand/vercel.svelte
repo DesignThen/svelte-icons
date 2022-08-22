@@ -3,5 +3,6 @@
 	xmlns="http://www.w3.org/2000/svg"
 	style="width: auto; display: inline-block;"
 	aria-hidden="true"
-	role="img"><title>Vercel</title><path d="M24 22.525H0l12-21.05 12 21.05z" /></svg
+	role="img"
+	{...$$restProps}><title>Vercel</title><path d="M24 22.525H0l12-21.05 12 21.05z" /></svg
 >
