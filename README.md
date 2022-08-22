@@ -85,23 +85,23 @@ Icons should behave as you expect
 
 ```html
 <script>
-	import Github from "$lib/outline/annotation.svelte";
+  import Github from "$lib/outline/annotation.svelte";
 </script>
 
 <style>
-	.button {
-		background: black;
-		color: white;
-		font-size: 16px;
-		padding: 12px 20px;
-	}
+  .button {
+    background: black;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+  }
 
-	.button :global(svg) {
-		// The svg icon inherits the color and styles from it's sibling text elements.
-		// Here, the font-size for the icon overrides it's inherited styles.
-		// The height of the icon will be 24px and the width will adjust automatically.
-		font-size: 24px;
-	}
+  .button :global(svg) {
+    // The svg icon inherits the color and styles from it's sibling text elements.
+    // Here, the font-size for the icon overrides it's inherited styles.
+    // The height of the icon will be 24px and the width will adjust automatically.
+    font-size: 24px;
+  }
 </style>
 
 <button on:click={() => console.log("Hi mum!")}><Github class="locked" /> Login with GitHub</button>
