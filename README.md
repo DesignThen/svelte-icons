@@ -139,16 +139,16 @@ This library is MIT licensed.
 
 ```
 import/
-	heroicons-solid/
-		icon1.svg
-		icon2.svg
-		...
-	heroicons-outline/
-		icon1.svg
-		icon2.svg
-		...
-	.gitkeep
-	README.md (you're here)
+⮑ heroicons-solid/
+   ⮑ icon1.svg
+   ⮑ icon2.svg
+   ⮑ ..
+⮑ heroicons-outline/
+   ⮑ icon1.svg
+   ⮑ icon2.svg
+   ⮑ ...
+⮑ .gitkeep
+README.md (you're here)
 package.json
 ...
 ```
