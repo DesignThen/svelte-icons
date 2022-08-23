@@ -5,6 +5,12 @@ REPO="simple-icons/simple-icons"
 REPO_FOLDER="icons"
 REPO_branch="develop"
 
+echo "🚧 deleting previous files..."
+
+rm -rf "$FOLDER/brand"
+
+echo "✅ ...ready!"
+
 echo "🚧 cloning from :: https://github.com/$REPO/tree/$REPO_branch/$REPO_FOLDER"
 echo "🚧 cloning to :: $FOLDER"
 

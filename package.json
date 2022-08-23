@@ -1,6 +1,6 @@
 {
 	"name": "@inqling/svelte-icons",
-	"version": "1.2.0",
+	"version": "2.0.0",
 	"license": "MIT",
 	"author": {
 		"name": "Ollie Taylor <OllieJT>",
@@ -14,22 +14,20 @@
 	},
 	"type": "module",
 	"scripts": {
-		"dev": "vite dev",
 		"build": "svelte-check --tsconfig ./tsconfig.json && vite build",
-		"package": "svelte-package",
-		"preview": "vite preview",
-		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"clone": "yarn run clone:simple-icons && yarn run clone:heroicons",
+		"clone:heroicons": "./scripts/clone-heroicons.sh > import.clone:heroicons.log",
+		"clone:simple-icons": "./scripts/clone-simple-icons.sh > import.clone:simple-icons.log",
+		"dev": "vite dev",
+		"icon:import": "node ./scripts/import.cjs > ./import.log  && yarn lint",
+		"icon:update": "yarn run clone && yarn run icon:import",
 		"lint": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
-		"ts": "tsc --pretty --noImplicitAny --noEmit",
-		"import-svg": "node ./scripts/import.cjs && yarn lint > ./import.log",
-		"heroicons:clone": "./scripts/clone-heroicons.sh",
-		"heroicons:import": "yarn heroicons:clone && yarn import-svg",
-		"heroicons": "yarn heroicons:import",
-		"simple-icons:clone": "./scripts/clone-simple-icons.sh",
-		"simple-icons:import": "yarn simple-icons:clone && yarn import-svg",
-		"simple-icons": "yarn simple-icons:import",
-		"postinstall": "svelte-kit sync"
+		"package": "svelte-package",
+		"postinstall": "svelte-kit sync",
+		"preview": "vite preview",
+		"ts": "tsc --pretty --noImplicitAny --noEmit"
 	},
 	"lint-staged": {
 		"*.{ts,svelte,cjs,json,css,html}": "prettier  --write"
