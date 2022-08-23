@@ -108,19 +108,21 @@ Icons should behave as you expect
 
 This library is MIT licensed.
 
-## Updating and adding to the package
+## Updating and adding to this package
 
-### Updating Heroicons
-
-1. Make sure you have dependencies installed with `yarn install`.
-2. Run `yarn heroicons` to clone and import the latest heroicons from [@tailwindlabs: heroicons/src](https://github.com/tailwindlabs/heroicons/tree/master/src).
-
-### Updating Simple Icons
+### Updating existing icons
 
 1. Make sure you have dependencies installed with `yarn install`.
-2. Run `yarn simple-icons` to clone and import the latest heroicons from [@simple-icons: simple-icons/icons](https://github.com/simple-icons/simple-icons/tree/develop/icons).
+2. Run `yarn run clone` to clone and import the latest SVG's
+    1. Heroicons: [@tailwindlabs: heroicons/src](https://github.com/tailwindlabs/heroicons/tree/master/src).
+    2. Simple Icons: [@simple-icons: simple-icons/icons](https://github.com/simple-icons/simple-icons/tree/develop/icons).
+3. Run `yarn run icon:import`
+
+Alternatively you can run `yarn run icon:update`, which will run the clone then import script.
 
 ### Adding new icons
+
+A script should be written for each new pack added - this is fairly simple and is mostly copying and pasting from the existing scripts. In the future I will add more details about writing a "clone script".
 
 1. Place all SVG icons in `/import` with one level of folder structure.
     - you should not nest svg's more than one level deep
@@ -129,8 +131,6 @@ This library is MIT licensed.
     - svg attributes will be standardized
 2. run `yarn import-svg` to convert all SVG files to svelte components.
 3. Generated files can be found at `/src/lib/...`.
-
-### Reference
 
 ##### Example folder structure
 
