@@ -5,6 +5,15 @@ REPO="tailwindlabs/heroicons"
 REPO_FOLDER="src"
 REPO_branch="master"
 
+
+echo "🚧 deleting previous files..."
+
+rm -rf "$FOLDER/small"
+rm -rf "$FOLDER/solid"
+rm -rf "$FOLDER/outline"
+
+echo "✅ ...ready!"
+
 echo "🚧 cloning from :: https://github.com/$REPO/tree/$REPO_branch/$REPO_FOLDER"
 echo "🚧 cloning to :: $FOLDER"
 
