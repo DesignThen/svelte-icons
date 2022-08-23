@@ -9,11 +9,5 @@
 	role="img"
 	{...$$restProps}
 >
-	<path
-		d="M20 12H4"
-		stroke="currentColor"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
-	/>
+	<path d="M3 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
 </svg>

@@ -1,21 +1,14 @@
-# @inqling/svelte-icons
+# Svelte Icons - Updated for Heroicons V2
+
+Combines <a href="https://heroicons.com"><strong>Heroicons &rarr;</strong></a> & <a href="https://simpleicons.org/"><strong>Simple Icons &rarr;</strong></a> as easy to use SVG components in your svelte project.
 
 <p align="center">
-  <img src="https://github.com/Inqling/svelte-icons/blob/main/static/banner.png" alt="Inqling Svelte Icons" width="830" height="212">
+  <img src="https://github.com/inqling/svelte-icons/blob/main/static/banner.png?raw=true" alt="Heroicons + Simple icons, The best icon library combined with brand icons ready for use in Svelte." width="830" height="212">
 </p>
 
-<p align="center">
-  Combines <a href="https://heroicons.com"><strong>Heroicons &rarr;</strong></a> & <a href="https://simpleicons.org/"><strong>Simple Icons &rarr;</strong></a> for seamless use as SVG components in your svelte project.
-</p>
+![npm](https://img.shields.io/npm/v/@inqling/svelte-icons?style=for-the-badge) ![NPM](https://img.shields.io/npm/l/@inqling/svelte-icons?style=for-the-badge) ![npm](https://img.shields.io/npm/dt/@inqling/svelte-icons?style=for-the-badge) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/Inqling/svelte-icons/main?style=for-the-badge)
 
-<p align="center">
-    <a href="https://www.npmjs.com/package/@inqling/svelte-icons">
-		<img src="https://img.shields.io/npm/v/@inqling/svelte-icons" alt="Latest Release">
-	</a>
-    <a href="https://github.com/Inqling/svelte-icons/blob/main/LICENSE">
-		<img src="https://img.shields.io/npm/l/@inqling/svelte-icons.svg" alt="License">
-	</a>
-</p>
+---
 
 ## Why this package?
 
@@ -115,19 +108,21 @@ Icons should behave as you expect
 
 This library is MIT licensed.
 
-## Updating and adding to the package
+## Updating and adding to this package
 
-### Updating Heroicons
-
-1. Make sure you have dependencies installed with `yarn install`.
-2. Run `yarn heroicons` to clone and import the latest heroicons from [@tailwindlabs: heroicons/src](https://github.com/tailwindlabs/heroicons/tree/master/src).
-
-### Updating Simple Icons
+### Updating existing icons
 
 1. Make sure you have dependencies installed with `yarn install`.
-2. Run `yarn simple-icons` to clone and import the latest heroicons from [@simple-icons: simple-icons/icons](https://github.com/simple-icons/simple-icons/tree/develop/icons).
+2. Run `yarn run clone` to clone and import the latest SVG's
+    1. Heroicons: [@tailwindlabs: heroicons/src](https://github.com/tailwindlabs/heroicons/tree/master/src).
+    2. Simple Icons: [@simple-icons: simple-icons/icons](https://github.com/simple-icons/simple-icons/tree/develop/icons).
+3. Run `yarn run icon:import`
+
+Alternatively you can run `yarn run icon:update`, which will run the clone then import script.
 
 ### Adding new icons
+
+A script should be written for each new pack added - this is fairly simple and is mostly copying and pasting from the existing scripts. In the future I will add more details about writing a "clone script".
 
 1. Place all SVG icons in `/import` with one level of folder structure.
     - you should not nest svg's more than one level deep
@@ -136,8 +131,6 @@ This library is MIT licensed.
     - svg attributes will be standardized
 2. run `yarn import-svg` to convert all SVG files to svelte components.
 3. Generated files can be found at `/src/lib/...`.
-
-### Reference
 
 ##### Example folder structure
 
@@ -156,3 +149,5 @@ README.md (you're here)
 package.json
 ...
 ```
+
+https://github.com/Inqling/svelte-icons/pull/5

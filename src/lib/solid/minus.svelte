@@ -1,7 +1,7 @@
 <svg
-	width="20"
-	height="20"
-	viewBox="0 0 20 20"
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 	style="width: auto; display: inline-block;"
@@ -12,7 +12,7 @@
 	<path
 		fill-rule="evenodd"
 		clip-rule="evenodd"
-		d="M3 10C3 9.44772 3.44772 9 4 9L16 9C16.5523 9 17 9.44772 17 10C17 10.5523 16.5523 11 16 11L4 11C3.44772 11 3 10.5523 3 10Z"
+		d="M2.25 12C2.25 11.5858 2.58579 11.25 3 11.25H21C21.4142 11.25 21.75 11.5858 21.75 12C21.75 12.4142 21.4142 12.75 21 12.75H3C2.58579 12.75 2.25 12.4142 2.25 12Z"
 		fill="currentColor"
 	/>
 </svg>

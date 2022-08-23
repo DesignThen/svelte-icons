@@ -2176,6 +2176,7 @@ export { default as BrandVuetify } from "$lib/brand/vuetify.svelte";
 export { default as BrandVulkan } from "$lib/brand/vulkan.svelte";
 export { default as BrandVultr } from "$lib/brand/vultr.svelte";
 export { default as BrandW3c } from "$lib/brand/w3c.svelte";
+export { default as BrandWacom } from "$lib/brand/wacom.svelte";
 export { default as BrandWagtail } from "$lib/brand/wagtail.svelte";
 export { default as BrandWakatime } from "$lib/brand/wakatime.svelte";
 export { default as BrandWalkman } from "$lib/brand/walkman.svelte";

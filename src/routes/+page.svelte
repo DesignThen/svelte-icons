@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	// Import from the package
 	import { Brand, Outline, Solid } from "$lib";
 	// Import from barrel files
@@ -6,7 +6,7 @@
 	import { OutlinePlusCircle } from "$lib/outline";
 	import { SolidStar } from "$lib/solid";
 	// Import specific icons
-	import Github from "$lib/outline/annotation.svelte";
+	import Github from "$lib/brand/github.svelte";
 	import PlusCircle from "$lib/outline/plus-circle.svelte";
 	import Star from "$lib/solid/star.svelte";
 </script>
