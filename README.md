@@ -150,4 +150,6 @@ package.json
 ...
 ```
 
-https://github.com/Inqling/svelte-icons/pull/5
+### Publishing to NPM
+
+Once you have updated the icons (`yarn run icon:update`) you can bump the version number `x.+1.0`. Commit your changes to PR. Github workflows will handle publishing to npm once the PR is merged in to main.
