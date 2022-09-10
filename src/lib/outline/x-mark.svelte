@@ -10,7 +10,7 @@
 	{...$$restProps}
 >
 	<path
-		d="M4.5 19.5L19.5 4.5M4.5 4.5L19.5 19.5"
+		d="M6 18L18 6M6 6L18 18"
 		stroke="currentColor"
 		stroke-width="1.5"
 		stroke-linecap="round"
