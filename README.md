@@ -1,4 +1,4 @@
-# Svelte Icons - Updated for Heroicons V2
+# [Svelte Icons](https://www.npmjs.com/package/@inqling/svelte-icons) - Updated for Heroicons V2
 
 Combines <a href="https://heroicons.com"><strong>Heroicons &rarr;</strong></a> & <a href="https://simpleicons.org/"><strong>Simple Icons &rarr;</strong></a> as easy to use SVG components in your svelte project.
 
