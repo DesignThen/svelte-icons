@@ -711,6 +711,7 @@ export { default as BrandFfmpeg } from "$lib/brand/ffmpeg.svelte";
 export { default as BrandFiat } from "$lib/brand/fiat.svelte";
 export { default as BrandFidoalliance } from "$lib/brand/fidoalliance.svelte";
 export { default as BrandFifa } from "$lib/brand/fifa.svelte";
+export { default as BrandFig } from "$lib/brand/fig.svelte";
 export { default as BrandFigma } from "$lib/brand/figma.svelte";
 export { default as BrandFigshare } from "$lib/brand/figshare.svelte";
 export { default as BrandFila } from "$lib/brand/fila.svelte";

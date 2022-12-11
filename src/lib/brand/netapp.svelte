@@ -4,5 +4,6 @@
 	style="width: auto; display: inline-block;"
 	aria-hidden="true"
 	role="img"
-	{...$$restProps}><title>NetApp</title><path d="M0 2v20h9.33V10h5.34v12H24V2Z" /></svg
+	{...$$restProps}
+	fill="currentColor"><title>NetApp</title><path d="M0 2v20h9.33V10h5.34v12H24V2Z" /></svg
 >

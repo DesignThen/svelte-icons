@@ -4,5 +4,7 @@
 	style="width: auto; display: inline-block;"
 	aria-hidden="true"
 	role="img"
-	{...$$restProps}><title>Framer</title><path d="M4 0h16v8h-8zM4 8h8l8 8H4zM4 16h8v8z" /></svg
+	{...$$restProps}
+	fill="currentColor"
+	><title>Framer</title><path d="M4 0h16v8h-8zM4 8h8l8 8H4zM4 16h8v8z" /></svg
 >

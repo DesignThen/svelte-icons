@@ -5,5 +5,6 @@
 	aria-hidden="true"
 	role="img"
 	{...$$restProps}
+	fill="currentColor"
 	><title>del.icio.us</title><path d="M12 12H0v12h12V12zM24 0H12v12h12V0z" /></svg
 >
