@@ -1,8 +1,9 @@
 const cheerio = require("cheerio");
 /**
  * @param  {string} svg
+ * @param  {"outline" | "solid" | null} type
  */
-function useSvg(svg) {
+function useSvg(svg, type) {
 	const $ = cheerio.load(svg, { xmlMode: true });
 
 	const html = $.parseHTML(svg);
@@ -23,17 +24,22 @@ function useSvg(svg) {
 	el.removeAttr("role");
 	el.removeAttr("aria-hidden");
 	el.removeAttr("style");
+	!!type && el.removeAttr("fill");
 
 	el.attr("style", "width: auto; display: inline-block;");
 	el.attr("aria-hidden", "true");
 	el.attr("role", "img");
 
 	el.attr("PROPS", "PROPS");
+	type === "outline" && el.attr("OUTLINE", "OUTLINE");
+	type === "solid" && el.attr("SOLID", "SOLID");
 
 	const htmlElement = el
 		.toString()
 		.replace(/#([0-9a-f]{6})/gi, "currentColor")
-		.replace(`PROPS="PROPS"`, "{...$$$restProps}");
+		.replace(`PROPS="PROPS"`, "{...$$$restProps}")
+		.replace(`OUTLINE="OUTLINE"`, `stroke="currentColor"`)
+		.replace(`SOLID="SOLID"`, `fill="currentColor"`);
 	// .replace("<svg", '<script lang="ts"></script><svg');
 
 	return htmlElement;

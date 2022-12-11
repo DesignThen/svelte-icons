@@ -31,6 +31,16 @@ console.log("🚧 Importing from: ", folders);
 
 console.log(`🚧 building task list...`);
 
+/**
+ * @param  {string} filepath
+ */
+function handleIconType(filepath) {
+	if (filepath.includes("/brand/")) return "solid";
+	// if (filepath.includes("/solid/")) return "solid";
+	//else if (filepath.includes("/outline/")) return "outline";
+	else return null;
+}
+
 // 1. Handle tasks for SVG files
 folders.forEach((pathname) => {
 	const assets = files.getSvgAssets(pathname);
@@ -38,7 +48,7 @@ folders.forEach((pathname) => {
 	assets.forEach((filepath) => {
 		const metadata = getFileMetadata(filepath);
 		const contentSvg = fs.readFileSync(metadata._input, { encoding: "utf-8" });
-		const contentSvelte = useSvg(contentSvg);
+		const contentSvelte = useSvg(contentSvg, handleIconType(filepath));
 
 		/** @type {Task} **/
 		const task = {
