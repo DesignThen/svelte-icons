@@ -39,11 +39,16 @@ View an example in [/src/routes/+page.svelte](https://github.com/Inqling/svelte-
 
 #### Import from the package
 
+Note that component names can't start with a number, so icons like `1Password` are renamed to `I1Password`.
+
+> **Note**
+> You might ask why we don't rename icons like `1Password` to `OnePassword`? Well, that's because the original icon is called `1Password` and we want it to be easy to search for with intellisense.
+
 ```html
 <script>
 	import { StarSolid } from "@inqling/svelte-icons/heroicon-24-solid";
 	import { PlusCircleOutline } from "@inqling/svelte-icons/heroicon-24-outline";
-	import { Github } from "@inqling/svelte-icons/simple-icons";
+	import { Github, I500px } from "@inqling/svelte-icons/simple-icons";
 </script>
 ```
 
@@ -57,49 +62,16 @@ Icons should behave as you expect
 </script>
 
 <style>
-	.locked {
-		color: black;
-		opacity: 0.5;
-		cursor: not-allowed;
+	:global(.icon) {
+		height: 24px;
+	}
+
+	section :global(svg) {
+		fill: red;
 	}
 </style>
 
-<OnePassword class="locked" />
-```
-
-### Styling
-
--   The icon will scale in size so that the height of the icon is the current font-size.
--   The icon will inherit the current text color.
-
-##### Example: The icon inherits text styles from it's parent styles
-
-```html
-<script>
-  import Github from "$lib/heroicon-24-outline/annotation.svelte";
-</script>
-
-<style>
-  .button {
-    // Icons inherit the text color from text styles
-    color: purple;
-  }
-
-  .icon {
-    // You can bass classes to icons
-    width: 24px;
-    height: 24px;
-  }
-
-  .button :global(svg) {
-    // You can target the svg element directly
-    display: inline-block
-  }
-</style>
-
-<button on:click={() => console.log("Hi mum!")}>
-  <Github class="icon" />
-</button>
+<OnePassword class="icon" style="width:24px;" />
 ```
 
 ## License
