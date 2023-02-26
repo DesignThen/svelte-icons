@@ -35,18 +35,16 @@ yarn add @inqling/svelte-icons@latest
 
 ### Importing Icons
 
+View an example in [/src/routes/+page.svelte](https://github.com/Inqling/svelte-icons/blob/main/src/routes/%2Bpage.svelte)
+
 #### Import from the package
 
-```js
-// Import from barrel files
-import { Hi20StarSolid } from "$lib/heroicon-20-solid";
-import { Hi24PlusCircleOutline } from "$lib/heroicon-24-outline";
-import { SiGithub } from "$lib/simple-icons";
-
-// Import specific icons (Recommended)
-import Star from "$lib/heroicon-20-solid/star.svelte";
-import PlusCircle from "$lib/heroicon-24-outline/plus-circle.svelte";
-import Github from "$lib/simple-icons/github.svelte";
+```html
+<script>
+	import { StarSolid } from "@inqling/svelte-icons/heroicon-24-solid";
+	import { PlusCircleOutline } from "@inqling/svelte-icons/heroicon-24-outline";
+	import { Github } from "@inqling/svelte-icons/simple-icons";
+</script>
 ```
 
 ### Passed Props
@@ -55,7 +53,7 @@ Icons should behave as you expect
 
 ```html
 <script>
-	import OnePassword from "$lib/simple-icons//1password";
+	import { OnePassword } from "@inqling/svelte-icons/simple-icons";
 </script>
 
 <style>
