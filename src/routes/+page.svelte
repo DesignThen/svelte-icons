@@ -4,7 +4,7 @@
 	import { Github, I500px } from "$lib/simple-icons";
 </script>
 
-<style >
+<style>
 	:global(.icon) {
 		width: 24px;
 		height: 24px;
