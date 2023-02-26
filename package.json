@@ -55,5 +55,8 @@
 	},
 	"peerDependencies": {
 		"svelte": "^3"
+	},
+	"engines": {
+		"pnpm": "^7.0.0"
 	}
 }
