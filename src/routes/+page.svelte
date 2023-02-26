@@ -21,9 +21,9 @@
 <section>
 	<h4>Import from barrel files</h4>
 	<code lang="html">
-		<pre>import { Hi20StarSolid } from "$lib/heroicon-20-solid";</pre>
-		<pre>import { Hi24PlusCircleOutline } from "$lib/heroicon-24-outline";</pre>
-		<pre>import { SiGithub } from "$lib/simple-icons";</pre>
+		<pre>import {Hi20StarSolid} from "$lib/heroicon-20-solid";</pre>
+		<pre>import {Hi24PlusCircleOutline} from "$lib/heroicon-24-outline";</pre>
+		<pre>import {SiGithub} from "$lib/simple-icons";</pre>
 	</code>
 	<div class="icon"><Hi20StarSolid /></div>
 	<div class="icon"><Hi24PlusCircleOutline /></div>
@@ -33,7 +33,6 @@
 <section>
 	<h4>Import from barrel files</h4>
 	<code lang="html">
-
 		<pre>import Star from "$lib/heroicon-20-solid/star.svelte";</pre>
 		<pre>import PlusCircle from "$lib/heroicon-24-outline/plus-circle.svelte";</pre>
 		<pre>import Github from "$lib/simple-icons/github.svelte";</pre>
