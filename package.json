@@ -26,8 +26,8 @@
 		"clone": "pnpm run clone:simple-icons && pnpm run clone:heroicons",
 		"clone:heroicons": "./scripts/clone-heroicons.sh > import.clone:heroicons.log",
 		"clone:simple-icons": "./scripts/clone-simple-icons.sh > import.clone:simple-icons.log",
-		"icon:import": "node ./scripts/import.cjs > ./import.log  && yarn lint",
-		"icon:update": "pnpm run clone && pnpm run icon:import"
+		"icon:import": "node ./scripts/import.cjs > ./import.log && pnpm format",
+		"icon:update": "pnpm run clone && pnpm run icon:import && pnpm format"
 	},
 	"lint-staged": {
 		"*.{ts,svelte,cjs,json,css,html}": "prettier  --write"
