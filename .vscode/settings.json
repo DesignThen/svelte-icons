@@ -5,7 +5,7 @@
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": true
 	},
-	"eslint.packageManager": "yarn",
+	"eslint.packageManager": "pnpm",
 	"files.exclude": {
 		"**/node_modules": true,
 		"**/bower_components": true,

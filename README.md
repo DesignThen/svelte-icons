@@ -112,13 +112,13 @@ This library is MIT licensed.
 
 ### Updating existing icons
 
-1. Make sure you have dependencies installed with `yarn install`.
-2. Run `yarn run clone` to clone and import the latest SVG's
+1. Make sure you have dependencies installed with `pnpm install`.
+2. Run `pnpm clone` to clone and import the latest SVG's
     1. Heroicons: [@tailwindlabs: heroicons/src](https://github.com/tailwindlabs/heroicons/tree/master/src).
     2. Simple Icons: [@simple-icons: simple-icons/icons](https://github.com/simple-icons/simple-icons/tree/develop/icons).
-3. Run `yarn run icon:import`
+3. Run `pnpm icon:import`
 
-Alternatively you can run `yarn run icon:update`, which will run the clone then import script.
+Alternatively you can run `pnpm icon:update`, which will run the clone then import script.
 
 ### Adding new icons
 
@@ -152,4 +152,4 @@ package.json
 
 ### Publishing to NPM
 
-Once you have updated the icons (`yarn run icon:update`) you can bump the version number `x.+1.0`. Commit your changes to PR. Github workflows will handle publishing to npm once the PR is merged in to main.
+Once you have updated the icons (`pnpm icon:update`) you can bump the version number `x.+1.0`. Commit your changes to PR. Github workflows will handle publishing to npm once the PR is merged in to main.

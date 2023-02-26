@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn run lint-staged
-yarn run check
+pnpm lint-staged
+pnpm check
