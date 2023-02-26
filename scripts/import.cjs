@@ -77,8 +77,8 @@ Object.keys(barrel).forEach((key) => {
 	root.push(task);
 });
 
-const rootBarelFile = files.handleBarrelFile("lib", root, true);
-tasks.push(rootBarelFile);
+// const rootBarelFile = files.handleBarrelFile("lib", root, true);
+// tasks.push(rootBarelFile);
 
 // 3. Run all tasks
 

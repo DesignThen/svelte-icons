@@ -66,12 +66,12 @@ function handleBarrelFile(name, tasks, isRoot = false) {
 		.map((t) => {
 			if (isRoot) {
 				let nameRef = t.pathname.replace("/index.ts", "");
-				const componentName = util.toComponentName(nameRef);
+				const componentName = util.toComponentName(nameRef, true);
 				const componentPath = util.toRelativePath(nameRef);
 				const line = `export * as ${componentName} from "${componentPath}"`;
 				return line;
 			} else {
-				const componentName = util.toComponentName(t.pathname /* , name */);
+				const componentName = util.toComponentName(t.pathname, false /* , name */);
 				const componentPath = util.toRelativePath(t.pathname);
 				const line = `export { default as ${componentName} } from "${componentPath}"`;
 				return line;
