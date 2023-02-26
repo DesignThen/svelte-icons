@@ -67,7 +67,7 @@ function resolveIconType(value) {
  * @param  {boolean} as_root
  */
 function toComponentName(value, as_root) {
-	const icon_type = as_root ? { prefix: "", suffix: "" } : resolveIconType(value);
+	const icon_type = as_root ? resolveIconType(value) : { prefix: "", suffix: "" };
 
 	const prefix = ` ${icon_type.prefix} `;
 	const suffix = ` ${icon_type.suffix} `;
