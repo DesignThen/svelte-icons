@@ -3,38 +3,36 @@
 	"editor.formatOnType": false,
 	"editor.formatOnSave": true,
 	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
 		"source.organizeImports": true
 	},
-	"eslint.packageManager": "yarn",
+	"eslint.packageManager": "pnpm",
 	"files.exclude": {
+		"**/.DS_Store": true,
+		"**/*-lock.*": true,
+		"**/*.Identifier": true,
+		"**/.vercel": true,
 		"**/node_modules": true,
-		"**/bower_components": true,
-		"**/*.code-search": true,
-		".cache": true,
-		".DS_Store": true,
-		".gitattributes": true,
-		"*-lock.*": true,
-		"*.Identifier": true,
-		"tsconfig.tsbuildinfo": true
-	},
-	"search.exclude": {
-		"**/node_modules": true,
-		"**/bower_components": true,
-		"**/*.code-search": true,
-		".cache": true,
-		".DS_Store": true,
-		".gitattributes": true,
-		"*-lock.*": true,
-		"*.Identifier": true,
-		"tsconfig.tsbuildinfo": true,
-
-		"src/lib/brand": false,
-		"src/lib/solid": false,
-		"src/lib/outline": false
+		"**/tsconfig.tsbuildinfo": true,
+		"**/.npmrc": true
 	},
 	"files.watcherExclude": {
 		"**/node_modules": true,
 		"**/.svelte-kit": true
 	},
-	"problems.sortOrder": "severity"
+	"search.exclude": {
+		"**/.DS_Store": true,
+		"**/*-lock.*": true,
+		"**/*.Identifier": true,
+		"**/.vercel": true,
+		"**/node_modules": true,
+		"**/tsconfig.tsbuildinfo": true,
+		"**/.npmrc": true,
+
+		"src/lib/brand": false,
+		"src/lib/solid": false,
+		"src/lib/outline": false
+	},
+	"problems.sortOrder": "severity",
+	"todo-tree.tree.scanMode": "workspace only"
 }
