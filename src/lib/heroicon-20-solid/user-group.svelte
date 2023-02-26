@@ -4,7 +4,7 @@
 	viewBox="0 0 20 20"
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
-	style="width: auto; display: inline-block;"
+	style="display: inline-block;"
 	aria-hidden="true"
 	role="img"
 	{...$$restProps}

@@ -26,7 +26,7 @@ function useSvg(svg, type) {
 	el.removeAttr("style");
 	!!type && el.removeAttr("fill");
 
-	el.attr("style", "width: auto; display: inline-block;");
+	el.attr("style", "display: inline-block;");
 	el.attr("aria-hidden", "true");
 	el.attr("role", "img");
 
