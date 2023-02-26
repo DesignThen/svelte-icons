@@ -1,5 +1,11 @@
 # @inqling/svelte-icons
 
+## 3.0.1
+
+### Patch Changes
+
+-   6e625e5: fixes package exports
+
 ## 3.0.0
 
 ### Major Changes
