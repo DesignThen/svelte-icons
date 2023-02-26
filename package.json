@@ -2,15 +2,14 @@
 	"name": "@inqling/svelte-icons",
 	"version": "2.4.0",
 	"license": "MIT",
-	"author": {
-		"name": "Ollie Taylor <OllieJT>",
-		"email": "ollie@inqling.studio",
-		"url": "https://inqling.studio/"
-	},
+	"author": "Ollie Taylor",
 	"homepage": "https://github.com/inqling/svelte-icons#readme",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/inqling/svelte-icons.git"
+	},
+	"bugs": {
+		"url": "https://github.com/inqling/svelte-icons/issues"
 	},
 	"type": "module",
 	"scripts": {
@@ -53,8 +52,19 @@
 		"vite": "^4.1.4"
 	},
 	"peerDependencies": {
-		"svelte": "^3"
+		"svelte": "^3.55.1"
 	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"svelte": "./dist/index.js",
+	"types": "./dist/index.d.ts",
 	"packageManager": "pnpm@7.28.0",
 	"engines": {
 		"pnpm": "^7.0.0"
