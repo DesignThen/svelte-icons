@@ -33,25 +33,25 @@
 		"*.{ts,svelte,cjs,json,css,html}": "prettier  --write"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-static": "^1.0.0-next.39",
-		"@sveltejs/kit": "^1.0.0-next.428",
-		"@sveltejs/package": "^1.0.0-next.1",
-		"@types/node": "^18.7.8",
+		"@sveltejs/adapter-static": "^2.0.1",
+		"@sveltejs/kit": "^1.8.5",
+		"@sveltejs/package": "^2.0.2",
+		"@types/node": "^18.14.1",
 		"cheerio": "^1.0.0-rc.12",
 		"degit": "^2.8.4",
-		"husky": "^8.0.1",
-		"lint-staged": "^13.0.3",
-		"prettier": "^2.7.1",
-		"prettier-plugin-svelte": "^2.7.0",
-		"svelte": "^3.49.0",
-		"svelte-check": "^2.8.1",
-		"svelte-preprocess": "^4.10.7",
-		"svelte2tsx": "^0.5.14",
-		"tslib": "^2.4.0",
-		"typescript": "^4.7.4",
-		"vite": "^3.0.9"
+		"husky": "^8.0.3",
+		"lint-staged": "^13.1.2",
+		"prettier": "^2.8.4",
+		"prettier-plugin-svelte": "^2.9.0",
+		"svelte": "^3.55.1",
+		"svelte-check": "^3.0.4",
+		"svelte-preprocess": "^5.0.1",
+		"svelte2tsx": "^0.6.2",
+		"tslib": "^2.5.0",
+		"typescript": "^4.9.5",
+		"vite": "^4.1.4"
 	},
 	"peerDependencies": {
-		"svelte": ">= 3.0.0 < 4"
+		"svelte": "^3"
 	}
 }
