@@ -25,12 +25,12 @@ This library adapts the following repositories for use in Svelte:
 
 ```bash
 # npm
-npm i @inqling/svelte-icons
+npm i @inqling/svelte-icons@latest
 ```
 
 ```bash
 #yarn
-yarn add @inqling/svelte-icons
+yarn add @inqling/svelte-icons@latest
 ```
 
 ### Importing Icons
@@ -39,14 +39,14 @@ yarn add @inqling/svelte-icons
 
 ```js
 // Import from barrel files
-import { BrandGithub } from "$lib/brand";
-import { OutlinePlusCircle } from "$lib/outline";
-import { SolidStar } from "$lib/solid";
+import { Hi20StarSolid } from "$lib/heroicon-20-solid";
+import { Hi24PlusCircleOutline } from "$lib/heroicon-24-outline";
+import { SiGithub } from "$lib/simple-icons";
 
 // Import specific icons (Recommended)
-import Github from "$lib/outline/annotation.svelte";
-import PlusCircle from "$lib/outline/plus-circle.svelte";
-import Star from "$lib/solid/star.svelte";
+import Star from "$lib/heroicon-20-solid/star.svelte";
+import PlusCircle from "$lib/heroicon-24-outline/plus-circle.svelte";
+import Github from "$lib/simple-icons/github.svelte";
 ```
 
 ### Passed Props
@@ -55,7 +55,7 @@ Icons should behave as you expect
 
 ```html
 <script>
-	import OnePassword from "$lib/brand/1password";
+	import OnePassword from "$lib/simple-icons//1password";
 </script>
 
 <style>
@@ -78,7 +78,7 @@ Icons should behave as you expect
 
 ```html
 <script>
-  import Github from "$lib/outline/annotation.svelte";
+  import Github from "$lib/heroicon-24-outline/annotation.svelte";
 </script>
 
 <style>
