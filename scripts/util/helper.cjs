@@ -64,6 +64,23 @@ function resolveIconType(value) {
 
 /**
  * @param  {string} value
+ */
+function fixNumberName(value) {
+	if (
+		value === "1001tracklists" ||
+		value === "1password" ||
+		value === "3m" ||
+		value === "42" ||
+		value === "4chan" ||
+		value === "4d" ||
+		value === "500px"
+	) {
+		return `I` + value;
+	} else return value;
+}
+
+/**
+ * @param  {string} value
  * @param  {boolean} as_root
  */
 function toComponentName(value, as_root) {
@@ -75,7 +92,7 @@ function toComponentName(value, as_root) {
 	const name = prefix + toTitleCase(value).split(".").shift() + suffix;
 	const withoutSpaces = name?.replace(/\s/g, "");
 	if (!withoutSpaces) throw new Error(`Could not format component name: ${value}`);
-	return withoutSpaces;
+	return fixNumberName(withoutSpaces);
 }
 /**
  * @param  {string} pathname
