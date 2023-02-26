@@ -55,6 +55,18 @@
 		".": {
 			"types": "./dist/index.d.ts",
 			"svelte": "./dist/index.js"
+		},
+		"./heroicon-20-solid": {
+			"types": "./dist/heroicon-20-solid/index.d.ts",
+			"svelte": "./dist/heroicon-20-solid/index.js"
+		},
+		"./heroicon-24-solid": {
+			"types": "./dist/heroicon-24-solid/index.d.ts",
+			"svelte": "./dist/heroicon-24-solid/index.js"
+		},
+		"./heroicon-24-outline": {
+			"types": "./dist/heroicon-24-outline/index.d.ts",
+			"svelte": "./dist/heroicon-24-outline/index.js"
 		}
 	},
 	"files": [
