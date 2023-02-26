@@ -41,14 +41,37 @@ function toTitleCase(value) {
 	const asTitleCase = withoutDashes.replace(/\w\S*/g, capitalize);
 	return asTitleCase;
 }
+/**
+ * @param  {string} value
+ */
+function resolveIconType(value) {
+	const [_, path] = value.split("lib/");
+	if (!path) throw new Error(`Could not format component name: ${value}`);
+
+	const [icon_type] = path.split("/");
+
+	if (icon_type?.startsWith("heroicon")) {
+		const [_, size, type] = icon_type.split("-");
+		if (!type || !size) {
+			throw new Error(`Could not format heroicon component name: ${value}`);
+		}
+
+		return { prefix: `Hi` + capitalize(size), suffix: capitalize(type) };
+	} else if (icon_type?.startsWith("simple-icons")) {
+		return { prefix: "Si", suffix: "" };
+	} else throw new Error(`icon_type: ${icon_type} not supported in resolveIconType`);
+}
 
 /**
  * @param  {string} value
- * @param  {string} [prefix]
  */
-function toComponentName(value, prefix) {
-	const pre = prefix ? `${capitalize(prefix)} ` : "";
-	const name = pre + toTitleCase(value).split(".").shift();
+function toComponentName(value) {
+	const icon_type = resolveIconType(value);
+
+	const prefix = ` ${icon_type.prefix} `;
+	const suffix = ` ${icon_type.suffix} `;
+
+	const name = prefix + toTitleCase(value).split(".").shift() + suffix;
 	const withoutSpaces = name?.replace(/\s/g, "");
 	if (!withoutSpaces) throw new Error(`Could not format component name: ${value}`);
 	return withoutSpaces;

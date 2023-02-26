@@ -71,7 +71,7 @@ function handleBarrelFile(name, tasks, isRoot = false) {
 				const line = `export * as ${componentName} from "${componentPath}"`;
 				return line;
 			} else {
-				const componentName = util.toComponentName(t.pathname, name);
+				const componentName = util.toComponentName(t.pathname /* , name */);
 				const componentPath = util.toRelativePath(t.pathname);
 				const line = `export { default as ${componentName} } from "${componentPath}"`;
 				return line;
