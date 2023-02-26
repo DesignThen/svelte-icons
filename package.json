@@ -20,8 +20,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. .",
-		"format": "pnpm lint --write",
-		"release": "pnpm build && changeset publish",
+		"format": "prettier --write --plugin-search-dir=. .",
+		"release": "pnpm package && changeset publish",
 		"ts": "tsc --pretty --noImplicitAny --noEmit",
 		"clone": "pnpm run clone:simple-icons && pnpm run clone:heroicons",
 		"clone:heroicons": "./scripts/clone-heroicons.sh > import.clone:heroicons.log",
@@ -29,12 +29,9 @@
 		"icon:import": "node ./scripts/import.cjs > ./import.log && pnpm format",
 		"icon:update": "pnpm run clone && pnpm run icon:import && pnpm format"
 	},
-	"lint-staged": {
-		"*.{ts,svelte,cjs,json,css,html}": "prettier  --write"
-	},
 	"devDependencies": {
 		"@changesets/cli": "^2.26.0",
-		"@sveltejs/adapter-static": "^2.0.1",
+		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.8.5",
 		"@sveltejs/package": "^2.0.2",
 		"@types/node": "^18.14.1",

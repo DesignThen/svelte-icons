@@ -1,13 +1,13 @@
 #!/bin/sh
 
-FOLDER="${PWD}/import/brand"
+FOLDER="${PWD}/import/simple-icons"
 REPO="simple-icons/simple-icons"
 REPO_FOLDER="icons"
 REPO_branch="develop"
 
 echo "🚧 deleting previous files..."
 
-rm -rf "$FOLDER/brand"
+rm -rf "$FOLDER/simple-icons"
 
 echo "✅ ...ready!"
 
