@@ -51,6 +51,19 @@
 	"peerDependencies": {
 		"svelte": "^3.55.1"
 	},
+	"typesVersions": {
+		">4.0": {
+			"heroicon-20-solid": [
+				"./dist/heroicon-20-solid/index.d.ts"
+			],
+			"heroicon-24-solid": [
+				"./dist/heroicon-24-solid/index.d.ts"
+			],
+			"heroicon-24-outline": [
+				"./dist/heroicon-24-outline/index.d.ts"
+			]
+		}
+	},
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
