@@ -1,5 +1,12 @@
 # @inqling/svelte-icons
 
+## 3.0.2
+
+### Patch Changes
+
+-   c3c0305: Fixes missing simple icons export
+-   cd2a103: fixes exported typings
+
 ## 3.0.1
 
 ### Patch Changes
