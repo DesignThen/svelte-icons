@@ -35,10 +35,10 @@ console.log(`🚧 building task list...`);
  * @param  {string} filepath
  */
 function handleIconType(filepath) {
-	if (filepath.includes("/brand/")) return "solid";
+	if (filepath.includes("/simple-icons/")) return "solid";
 	// if (filepath.includes("/solid/")) return "solid";
 	//else if (filepath.includes("/outline/")) return "outline";
-	else return null;
+	else return "auto";
 }
 
 // 1. Handle tasks for SVG files

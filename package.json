@@ -26,7 +26,7 @@
 		"clone": "pnpm run clone:simple-icons && pnpm run clone:heroicons",
 		"clone:heroicons": "./scripts/clone-heroicons.sh > import.clone:heroicons.log",
 		"clone:simple-icons": "./scripts/clone-simple-icons.sh > import.clone:simple-icons.log",
-		"icon:import": "node ./scripts/import.cjs > ./import.log && pnpm format",
+		"icon:import": "node ./scripts/import.cjs > ./import.log",
 		"icon:update": "pnpm run clone && pnpm run icon:import && pnpm format"
 	},
 	"devDependencies": {
