@@ -4,5 +4,6 @@
 	style="display: inline-block;"
 	aria-hidden="true"
 	role="img"
-	{...$$restProps}><title>Vercel</title><path d="M24 22.525H0l12-21.05 12 21.05z" /></svg
+	{...$$restProps}
+	fill="currentColor"><title>Vercel</title><path d="M24 22.525H0l12-21.05 12 21.05z" /></svg
 >
