@@ -24,7 +24,7 @@ function useSvg(svg, type) {
 	el.removeAttr("role");
 	el.removeAttr("aria-hidden");
 	el.removeAttr("style");
-	!!type && el.removeAttr("fill");
+	type !== "auto" && el.removeAttr("fill");
 
 	el.attr("style", "display: inline-block;");
 	el.attr("aria-hidden", "true");
