@@ -1,7 +1,7 @@
 const cheerio = require("cheerio");
 /**
  * @param  {string} svg
- * @param  {"outline" | "solid" | null} type
+ * @param  {"outline" | "solid" | "auto"} type
  */
 function useSvg(svg, type) {
 	const $ = cheerio.load(svg, { xmlMode: true });
