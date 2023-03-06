@@ -1,5 +1,11 @@
 # @inqling/svelte-icons
 
+## 3.0.3
+
+### Patch Changes
+
+-   711fb681: fixes fill color for simple-icons
+
 ## 3.0.2
 
 ### Patch Changes
