@@ -52,6 +52,15 @@ Note that component names can't start with a number, so icons like `1Password` a
 </script>
 ```
 
+| Icon Pack         | Import Path                                 |
+| ----------------- | ------------------------------------------- |
+| Heroicons solid   | `@inqling/svelte-icons/heroicon-24-solid`   |
+| Heroicons outline | `@inqling/svelte-icons/heroicon-24-outline` |
+| Heroicons small   | `@inqling/svelte-icons/heroicon-20-solid`   |
+| Simple Icons      | `@inqling/svelte-icons/simple-icons`        |
+
+From each pack you can import multiple icons from a pack at once, or import a single icon directly.
+
 ### Passed Props
 
 Icons should behave as you expect
