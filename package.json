@@ -65,6 +65,18 @@
 			],
 			"simple-icons": [
 				"./dist/simple-icons/index.d.ts"
+			],
+			"heroicon-20-solid/*": [
+				"./dist/heroicon-20-solid/*.d.ts"
+			],
+			"heroicon-24-solid/*": [
+				"./dist/heroicon-24-solid/*.d.ts"
+			],
+			"heroicon-24-outline/*": [
+				"./dist/heroicon-24-outline/*.d.ts"
+			],
+			"simple-icons/*": [
+				"./dist/simple-icons/*.d.ts"
 			]
 		}
 	},
@@ -77,18 +89,22 @@
 			"types": "./dist/heroicon-20-solid/index.d.ts",
 			"svelte": "./dist/heroicon-20-solid/index.js"
 		},
+		"./heroicon-20-solid/*.svelte": "./dist/heroicon-20-solid/*.svelte",
 		"./heroicon-24-solid": {
 			"types": "./dist/heroicon-24-solid/index.d.ts",
 			"svelte": "./dist/heroicon-24-solid/index.js"
 		},
+		"./heroicon-24-solid/*.svelte": "./dist/heroicon-24-solid/*.svelte",
 		"./heroicon-24-outline": {
 			"types": "./dist/heroicon-24-outline/index.d.ts",
 			"svelte": "./dist/heroicon-24-outline/index.js"
 		},
+		"./heroicon-24-outline/*.svelte": "./dist/heroicon-24-outline/*.svelte",
 		"./simple-icons": {
 			"types": "./dist/simple-icons/index.js",
 			"svelte": "./dist/simple-icons/index.js"
-		}
+		},
+		"./simple-icons/*.svelte": "./dist/simple-icons/*.svelte"
 	},
 	"files": [
 		"dist"
