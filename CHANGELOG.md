@@ -1,5 +1,14 @@
 # @inqling/svelte-icons
 
+## 3.1.0
+
+### Minor Changes
+
+-   02980fda: Bundle improvements:
+
+    -   Enables individual icon imports
+    -   Improves tree shaking
+
 ## 3.0.3
 
 ### Patch Changes
