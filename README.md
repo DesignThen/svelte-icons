@@ -58,7 +58,10 @@ Icons should behave as you expect
 
 ```html
 <script>
-	import { OnePassword } from "@inqling/svelte-icons/simple-icons";
+	// import 1 icon directly (recommended)
+	import GitHub from "@inqling/svelte-icons/simple-icons/github.svelte";
+	// import multiple icons from a pack
+	import { Svelte, OnePassword } from "@inqling/svelte-icons/simple-icons";
 </script>
 
 <style>
@@ -72,6 +75,8 @@ Icons should behave as you expect
 </style>
 
 <OnePassword class="icon" style="width:24px;" />
+<Svelte class="icon" style="width:24px;" />
+<GitHub class="icon" style="width:24px;" />
 ```
 
 ## License
