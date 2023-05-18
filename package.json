@@ -1,6 +1,6 @@
 {
 	"name": "@inqling/svelte-icons",
-	"version": "3.1.0",
+	"version": "3.2.0",
 	"license": "MIT",
 	"author": "Ollie Taylor",
 	"homepage": "https://github.com/inqling/svelte-icons#readme",
@@ -31,26 +31,26 @@
 		"icon:update": "pnpm run clone && pnpm run icon:import && pnpm format"
 	},
 	"devDependencies": {
-		"@changesets/cli": "^2.26.0",
-		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.8.5",
+		"@changesets/cli": "^2.26.1",
+		"@sveltejs/adapter-auto": "^2.1.0",
+		"@sveltejs/kit": "^1.18.0",
 		"@sveltejs/package": "^2.0.2",
-		"@types/node": "^18.14.1",
+		"@types/node": "^20.2.1",
 		"cheerio": "^1.0.0-rc.12",
 		"degit": "^2.8.4",
-		"prettier-plugin-svelte": "^2.9.0",
-		"prettier": "^2.8.4",
-		"publint": "^0.1.9",
-		"svelte-check": "^3.0.4",
-		"svelte-preprocess": "^5.0.1",
-		"svelte": "^3.55.1",
-		"svelte2tsx": "^0.6.2",
-		"tslib": "^2.5.0",
-		"typescript": "^4.9.5",
-		"vite": "^4.1.4"
+		"prettier-plugin-svelte": "^2.10.0",
+		"prettier": "^2.8.8",
+		"publint": "^0.1.11",
+		"svelte-check": "^3.3.2",
+		"svelte-preprocess": "^5.0.3",
+		"svelte": "^3.59.1",
+		"svelte2tsx": "^0.6.14",
+		"tslib": "^2.5.1",
+		"typescript": "^5.0.4",
+		"vite": "^4.3.8"
 	},
 	"peerDependencies": {
-		"svelte": "^3.55.1"
+		"svelte": ">=3.00.0"
 	},
 	"typesVersions": {
 		">4.0": {
