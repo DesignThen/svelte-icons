@@ -1,5 +1,15 @@
 # @inqling/svelte-icons
 
+## 3.3.0
+
+### Minor Changes
+
+-   80279125: Update dependencies
+-   9780560a: simple-icons
+
+    -   adds 22 new icons
+    -   updates 9 existing icons
+
 ## 3.1.0
 
 ### Minor Changes
