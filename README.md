@@ -43,7 +43,7 @@ Note that component names can't start with a number, so icons like `1Password` a
 ```html
 <script>
 	// using default exports for single icons
-	import  StarSolid from "@inqling/svelte-icons/heroicon-24-solid/star-solid";
+	import StarSolid from "@inqling/svelte-icons/heroicon-24-solid/star-solid";
 
 	// using named exports for multiple icons in a pack
 	import { Github, I500px } from "@inqling/svelte-icons/simple-icons";
@@ -97,11 +97,12 @@ Icons should behave as you expect most components.
 3. You'll likely see that a few hundred files have changed. Run `pnpm format` to ensure consistent formatting. Now you'll see that only new or updated icon files have changed.
 
 ### How to I contribute my work?
+
 1. Commit your changes
 2. Run npx changeset to create a new changeset.
-   1. Follow the instructions to create a changeset.
-   2. Adding new icons is considered a `minor` version bump.
-   3. Commit the changeset.
+    1. Follow the instructions to create a changeset.
+    2. Adding new icons is considered a `minor` version bump.
+    3. Commit the changeset.
 3. Open a pull request. Feel free to tag @OllieJT or @Inqling.
 
 ### How do I add new icon packs aside from Heroicons and Simple Icons?
@@ -117,8 +118,6 @@ A script should be written for each new pack added - this is fairly simple and i
     - svg attributes will be standardized
 2. run `yarn import-svg` to convert all SVG files to svelte components.
 3. Generated files can be found at `/src/lib/...`.
-
-
 
 ```
 Example folder structure
