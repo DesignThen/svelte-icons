@@ -1,5 +1,11 @@
 # @inqling/svelte-icons
 
+## 3.3.1
+
+### Patch Changes
+
+-   391fbc97: removed engine requirement
+
 ## 3.3.0
 
 ### Minor Changes
