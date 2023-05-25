@@ -111,8 +111,5 @@
 	],
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"packageManager": "pnpm@7.28.0",
-	"engines": {
-		"pnpm": ">=7.0.0"
-	}
+	"packageManager": "pnpm@7.28.0"
 }
