@@ -2,6 +2,8 @@
 
 Combines <a href="https://heroicons.com"><strong>Heroicons V2 &rarr;</strong></a> & <a href="https://simpleicons.org/"><strong>Simple Icons &rarr;</strong></a> as easy to use SVG components in your svelte project.
 
+Checkout the <a href="https://github.com/Inqling/svelte-icons/blob/main/CHANGELOG.md">changelog</a> to see what's new.
+
 <p align="center">
   <img src="https://github.com/inqling/svelte-icons/blob/main/static/banner.png?raw=true" alt="Heroicons + Simple icons, The best icon library combined with brand icons ready for use in Svelte." width="830" height="212">
 </p>
