@@ -1,5 +1,12 @@
 # @inqling/svelte-icons
 
+## 3.3.2
+
+### Patch Changes
+
+-   55f00146: reduce package size (ignores source code and assets from npm package)
+-   55f00146: removed engine requirement
+
 ## 3.3.1
 
 ### Patch Changes
