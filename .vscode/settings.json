@@ -6,7 +6,6 @@
 		"source.fixAll.eslint": true,
 		"source.organizeImports": true
 	},
-	"eslint.packageManager": "pnpm",
 	"files.exclude": {
 		"**/.DS_Store": true,
 		"**/*-lock.*": true,
