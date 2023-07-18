@@ -1,5 +1,11 @@
 # @inqling/svelte-icons
 
+## 3.4.1
+
+### Patch Changes
+
+-   f13b01b5: version bump to fix bad deploy
+
 ## 3.4.0
 
 ### Minor Changes
