@@ -1,5 +1,92 @@
 # @inqling/svelte-icons
 
+## 3.4.0
+
+### Minor Changes
+
+-   055834d9: Adds 76 new brand icons including Threads.
+
+    -   acura
+    -   amazonluna
+    -   amazonredshift
+    -   ameba
+    -   apacheparquet
+    -   appsmith
+    -   ariakit
+    -   authelia
+    -   babylondotjs
+    -   bento
+    -   botblecms
+    -   caddy
+    -   cadillac
+    -   channel4
+    -   chianetwork
+    -   compilerexplorer
+    -   doi
+    -   dts
+    -   ebox
+    -   eclipseadoptium
+    -   elavon
+    -   ferretdb
+    -   fi
+    -   forgejo
+    -   freepik
+    -   frontify
+    -   gdal
+    -   googleappsscript
+    -   immich
+    -   juejin
+    -   kinsta
+    -   leptos
+    -   liberadotchat
+    -   lightning
+    -   logseq
+    -   maildotcom
+    -   maplibre
+    -   mautic
+    -   mg
+    -   mikrotik
+    -   misskey
+    -   monkeytype
+    -   monogame
+    -   mubi
+    -   multisim
+    -   nginxproxymanager
+    -   nikon
+    -   nxp
+    -   openscad
+    -   payloadcms
+    -   prefect
+    -   pretzel
+    -   proton
+    -   protondrive
+    -   pterodactyl
+    -   readdotcv
+    -   recoil
+    -   revanced
+    -   riscv
+    -   robloxstudio
+    -   sitecore
+    -   skyrock
+    -   sourcehut
+    -   spoj
+    -   standardresume
+    -   supercrease
+    -   termius
+    -   threads
+    -   tiddlywiki
+    -   trailforks
+    -   trivy
+    -   vega
+    -   vivawallet
+    -   voipdotms
+    -   wasabi
+    -   webtrees
+
+### Patch Changes
+
+-   055834d9: updates existing icons
+
 ## 3.3.3
 
 ### Patch Changes
