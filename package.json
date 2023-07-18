@@ -49,7 +49,7 @@
 		"vite": "^4.4.4"
 	},
 	"peerDependencies": {
-		"svelte": ">=3.00.0"
+		"svelte": ">=3.0.0"
 	},
 	"typesVersions": {
 		">4.0": {
