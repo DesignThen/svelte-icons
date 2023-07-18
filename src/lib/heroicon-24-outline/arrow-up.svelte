@@ -1,19 +1,17 @@
 <svg
-	width="24"
-	height="24"
-	viewBox="0 0 24 24"
-	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
+	fill="none"
+	viewBox="0 0 24 24"
+	stroke-width="1.5"
+	stroke="currentColor"
 	style="display: inline-block;"
 	aria-hidden="true"
 	role="img"
 	{...$$restProps}
 >
 	<path
-		d="M4.5 10.5L12 3M12 3L19.5 10.5M12 3V21"
-		stroke="currentColor"
-		stroke-width="1.5"
 		stroke-linecap="round"
 		stroke-linejoin="round"
+		d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"
 	/>
 </svg>
