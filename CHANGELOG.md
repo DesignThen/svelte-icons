@@ -1,5 +1,12 @@
 # @inqling/svelte-icons
 
+## 3.4.3
+
+### Patch Changes
+
+-   126d0076: fixes changeset config
+-   376c5850: fix svelte pinned version
+
 ## 3.4.2
 
 ### Patch Changes
