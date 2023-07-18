@@ -1,5 +1,11 @@
 # @inqling/svelte-icons
 
+## 3.3.3
+
+### Patch Changes
+
+-   139fe92b: update svelte peer dependency. Now supports `^3.0.0 || ^4.0.0`
+
 ## 3.3.2
 
 ### Patch Changes
