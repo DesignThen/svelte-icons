@@ -1,5 +1,11 @@
 # @inqling/svelte-icons
 
+## 3.4.2
+
+### Patch Changes
+
+-   25aa5e46: fix peer deps version
+
 ## 3.4.1
 
 ### Patch Changes
