@@ -37,7 +37,6 @@
 		"@sveltejs/package": "^2.2.0",
 		"@types/node": "^20.4.2",
 		"cheerio": "1.0.0-rc.12",
-		"degit": "^2.8.4",
 		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.1",
 		"publint": "^0.1.16",
