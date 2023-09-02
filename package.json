@@ -77,6 +77,24 @@
 			],
 			"simple-icons/*": [
 				"./dist/simple-icons/*.d.ts"
+			],
+			"boxicons-logos": [
+				"./dist/boxicons-logos/index.d.ts"
+			],
+			"boxicons-logos/*": [
+				"./dist/boxicons-logos/*.d.ts"
+			],
+			"boxicons-regular": [
+				"./dist/boxicons-regular/index.d.ts"
+			],
+			"boxicons-regular/*": [
+				"./dist/boxicons-regular/*.d.ts"
+			],
+			"boxicons-solid": [
+				"./dist/boxicons-solid/index.d.ts"
+			],
+			"boxicons-solid/*": [
+				"./dist/boxicons-solid/*.d.ts"
 			]
 		}
 	},
@@ -104,7 +122,22 @@
 			"types": "./dist/simple-icons/index.js",
 			"svelte": "./dist/simple-icons/index.js"
 		},
-		"./simple-icons/*.svelte": "./dist/simple-icons/*.svelte"
+		"./simple-icons/*.svelte": "./dist/simple-icons/*.svelte",
+		"./boxicons-logos": {
+			"types": "./dist/boxicons-logos/index.js",
+			"svelte": "./dist/boxicons-logos/index.js"
+		},
+		"./boxicons-logos/*.svelte": "./dist/boxicons-logos/*.svelte",
+		"./boxicons-regular": {
+			"types": "./dist/boxicons-regular/index.js",
+			"svelte": "./dist/boxicons-regular/index.js"
+		},
+		"./boxicons-regular/*.svelte": "./dist/boxicons-regular/*.svelte",
+		"./boxicons-solid": {
+			"types": "./dist/boxicons-solid/index.js",
+			"svelte": "./dist/boxicons-solid/index.js"
+		},
+		"./boxicons-solid/*.svelte": "./dist/boxicons-solid/*.svelte"
 	},
 	"files": [
 		"dist"
