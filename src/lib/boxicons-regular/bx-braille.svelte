@@ -7,6 +7,7 @@
 	aria-hidden="true"
 	role="img"
 	{...$$restProps}
+	fill="currentColor"
 	><circle cx="4" cy="7" r="2" /><circle cx="9" cy="12" r="2" /><circle
 		cx="15"
 		cy="7"

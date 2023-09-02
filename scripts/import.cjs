@@ -36,6 +36,7 @@ console.log(`🚧 building task list...`);
  */
 function handleIconType(filepath) {
 	if (filepath.includes("/simple-icons/")) return "solid";
+	if (filepath.includes("/boxicons")) return "solid";
 	// if (filepath.includes("/solid/")) return "solid";
 	//else if (filepath.includes("/outline/")) return "outline";
 	else return "auto";
