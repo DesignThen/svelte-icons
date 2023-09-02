@@ -1,5 +1,11 @@
 # @inqling/svelte-icons
 
+## 4.0.0
+
+### Major Changes
+
+-   76d168ca: Adds boxicons
+
 ## 3.5.0
 
 ### Minor Changes
