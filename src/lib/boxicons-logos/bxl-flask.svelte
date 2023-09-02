@@ -7,6 +7,7 @@
 	aria-hidden="true"
 	role="img"
 	{...$$restProps}
+	fill="currentColor"
 	><path
 		d="M13.78 18.29c0 .12.15 0 0 0zm-3.35-2.7c.39.17-.31-.6 0 0zm-5.03.28c.15.26 0-.12 0 0zm5.6.39c-.27-.42-.2.06 0 .32.48.47.18-.26 0-.32z"
 	/><path

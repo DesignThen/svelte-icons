@@ -6,5 +6,6 @@
 	style="display: inline-block;"
 	aria-hidden="true"
 	role="img"
-	{...$$restProps}><path d="M5 15h14l-7-8z" /></svg
+	{...$$restProps}
+	fill="currentColor"><path d="M5 15h14l-7-8z" /></svg
 >

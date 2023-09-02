@@ -6,5 +6,6 @@
 	style="display: inline-block;"
 	aria-hidden="true"
 	role="img"
-	{...$$restProps}><circle cx="12" cy="18" r="2" /></svg
+	{...$$restProps}
+	fill="currentColor"><circle cx="12" cy="18" r="2" /></svg
 >
