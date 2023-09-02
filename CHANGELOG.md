@@ -1,5 +1,12 @@
 # @inqling/svelte-icons
 
+## 4.0.2
+
+### Patch Changes
+
+-   20ba8d87: adds missing boxicon export paths
+-   20ba8d87: adds svg fill to boxicons
+
 ## 4.0.1
 
 ### Patch Changes
