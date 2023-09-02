@@ -1,0 +1,10 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	style="display: inline-block;"
+	aria-hidden="true"
+	role="img"
+	{...$$restProps}><path d="M6 18h12v2H6zm6-14-6 6h5v6h2v-6h5z" /></svg
+>
