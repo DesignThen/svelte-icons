@@ -1,5 +1,15 @@
 # @inqling/svelte-icons
 
+## 3.5.0
+
+### Minor Changes
+
+-   5a482d20: update major (dev) versions
+
+### Patch Changes
+
+-   5a482d20: upgrade minor versions
+
 ## 3.4.3
 
 ### Patch Changes
