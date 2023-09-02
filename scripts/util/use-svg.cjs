@@ -42,7 +42,7 @@ function useSvg(svg, type) {
 		.replace(`SOLID="SOLID"`, `fill="currentColor"`);
 	// .replace("<svg", '<script lang="ts"></script><svg');
 
-	return htmlElement;
+	return htmlElement.replace("\t", "").replace("\n", "");
 }
 
 module.exports = useSvg;
