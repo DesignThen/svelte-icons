@@ -1,5 +1,11 @@
 # @inqling/svelte-icons
 
+## 4.0.1
+
+### Patch Changes
+
+-   04bd2098: adds missing boxicon export paths
+
 ## 4.0.0
 
 ### Major Changes
