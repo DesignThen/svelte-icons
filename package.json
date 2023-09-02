@@ -56,23 +56,23 @@
 			"heroicon-20-solid": [
 				"./dist/heroicon-20-solid/index.d.ts"
 			],
-			"heroicon-24-solid": [
-				"./dist/heroicon-24-solid/index.d.ts"
-			],
-			"heroicon-24-outline": [
-				"./dist/heroicon-24-outline/index.d.ts"
-			],
-			"simple-icons": [
-				"./dist/simple-icons/index.d.ts"
-			],
 			"heroicon-20-solid/*": [
 				"./dist/heroicon-20-solid/*.d.ts"
+			],
+			"heroicon-24-solid": [
+				"./dist/heroicon-24-solid/index.d.ts"
 			],
 			"heroicon-24-solid/*": [
 				"./dist/heroicon-24-solid/*.d.ts"
 			],
+			"heroicon-24-outline": [
+				"./dist/heroicon-24-outline/index.d.ts"
+			],
 			"heroicon-24-outline/*": [
 				"./dist/heroicon-24-outline/*.d.ts"
+			],
+			"simple-icons": [
+				"./dist/simple-icons/index.d.ts"
 			],
 			"simple-icons/*": [
 				"./dist/simple-icons/*.d.ts"
