@@ -32,7 +32,7 @@
 		"icon:update": "pnpm run clone && pnpm run icon:import && pnpm format"
 	},
 	"devDependencies": {
-		"@changesets/cli": "^2.26.2",
+		"@changesets/cli": "^2.27.1",
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/kit": "^1.24.0",
 		"@sveltejs/package": "^2.2.2",
