@@ -1,5 +1,18 @@
 # @inqling/svelte-icons
 
+## 4.1.0
+
+### Minor Changes
+
+- 01f55db: Add Heroicons Mini Variant
+- 8a34100: Fix icon importing for icon names hat start with a number
+
+### Patch Changes
+
+- 0a39d80: Add 12 new Herocions
+- 9f14898: linting changes
+- 18600c9: Added 334 new SimpleIcons
+
 ## 4.0.2
 
 ### Patch Changes
