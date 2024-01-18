@@ -1,10 +1,10 @@
 #!/usr/bin/node
 
-const fs = require("fs");
-const path = require("path");
-const util = require("./util/helper.cjs");
-const files = require("./util/files.cjs");
-const useSvg = require("./util/use-svg.cjs");
+const fs = require('fs');
+const path = require('path');
+const util = require('./util/helper.cjs');
+const files = require('./util/files.cjs');
+const useSvg = require('./util/use-svg.cjs');
 
 /**
  * @typedef {import('./util/types').FileMetadata} FileMetadata
@@ -12,8 +12,8 @@ const useSvg = require("./util/use-svg.cjs");
  * @typedef {import('./util/types').Barrel} Barrel
  */
 
-const path_to_import = path.resolve(__dirname, "../import");
-const path_to_components = path.resolve(__dirname, "../src/lib");
+const path_to_import = path.resolve(__dirname, '../import');
+const path_to_components = path.resolve(__dirname, '../src/lib');
 
 /** @type {string[]} **/
 let folders = files.getSourceFolders(path_to_import);
@@ -27,7 +27,7 @@ let barrel = {};
 /** @type {Task[]} **/
 let root = [];
 
-console.log("🚧 Importing from: ", folders);
+console.log('🚧 Importing from: ', folders);
 
 console.log(`🚧 building task list...`);
 
@@ -35,11 +35,11 @@ console.log(`🚧 building task list...`);
  * @param  {string} filepath
  */
 function handleIconType(filepath) {
-	if (filepath.includes("/simple-icons/")) return "solid";
-	if (filepath.includes("/boxicons")) return "solid";
+	if (filepath.includes('/simple-icons/')) return 'solid';
+	if (filepath.includes('/boxicons')) return 'solid';
 	// if (filepath.includes("/solid/")) return "solid";
 	//else if (filepath.includes("/outline/")) return "outline";
-	else return "auto";
+	else return 'auto';
 }
 
 // 1. Handle tasks for SVG files
@@ -48,7 +48,7 @@ folders.forEach((pathname) => {
 
 	assets.forEach((filepath) => {
 		const metadata = getFileMetadata(filepath);
-		const contentSvg = fs.readFileSync(metadata._input, { encoding: "utf-8" });
+		const contentSvg = fs.readFileSync(metadata._input, { encoding: 'utf-8' });
 		const contentSvelte = useSvg(contentSvg, handleIconType(filepath));
 
 		/** @type {Task} **/
@@ -58,7 +58,7 @@ folders.forEach((pathname) => {
 		};
 		tasks.push(task);
 
-		const asset_parent_folder = metadata._parent.split("/").pop() || "";
+		const asset_parent_folder = metadata._parent.split('/').pop() || '';
 		const prev = barrel[asset_parent_folder];
 		if (prev) {
 			barrel[asset_parent_folder] = [...prev, task];
@@ -90,11 +90,11 @@ tasks.forEach(({ content, pathname }, ix) => {
 	const parent = files.getParent(pathname);
 	try {
 		fs.mkdirSync(parent, { recursive: true });
-		fs.writeFileSync(pathname, content, { encoding: "utf-8", flag: "w" });
+		fs.writeFileSync(pathname, content, { encoding: 'utf-8', flag: 'w' });
 	} catch (err) {
 		console.error(`⛔️ Failed on [${ix + 1}/${to_do}]`);
-		console.log("⛔️  parent: ", parent);
-		console.log("⛔️  pathname: ", pathname);
+		console.log('⛔️  parent: ', parent);
+		console.log('⛔️  pathname: ', pathname);
 		throw err;
 	}
 });
@@ -108,7 +108,7 @@ console.log(`✅ ${to_do} tasks finished!`);
  * @returns {FileMetadata}
  */
 function getFileMetadata(filePath) {
-	const pathParts = filePath.split("/");
+	const pathParts = filePath.split('/');
 	const inputPathname = pathParts.pop();
 	const inputParentPathname = pathParts.pop();
 
@@ -116,7 +116,7 @@ function getFileMetadata(filePath) {
 	if (!inputPathname) throw new Error(`Couldn't get FILE from path: ${filePath}`);
 
 	const componentParentPath = path.join(path_to_components, inputParentPathname);
-	const componentFileName = util.toFilename(inputPathname, "svelte");
+	const componentFileName = util.toFilename(inputPathname, 'svelte');
 	const componentFilePath = path.join(componentParentPath, componentFileName);
 
 	return {

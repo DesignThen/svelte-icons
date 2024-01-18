@@ -4,14 +4,11 @@
 	viewBox="0 0 24 24"
 	stroke-width="1.5"
 	stroke="currentColor"
+	data-slot="icon"
 	style="display: inline-block;"
 	aria-hidden="true"
 	role="img"
 	{...$$restProps}
 >
-	<path
-		stroke-linecap="round"
-		stroke-linejoin="round"
-		d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-	/>
+	<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
 </svg>

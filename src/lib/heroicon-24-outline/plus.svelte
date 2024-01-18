@@ -4,6 +4,7 @@
 	viewBox="0 0 24 24"
 	stroke-width="1.5"
 	stroke="currentColor"
+	data-slot="icon"
 	style="display: inline-block;"
 	aria-hidden="true"
 	role="img"

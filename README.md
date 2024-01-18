@@ -18,8 +18,8 @@ Copying SVG code into your project can become tedious and messy. With icons it c
 
 This library adapts the following repositories for use in Svelte:
 
--   Heroicons: [tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons)
--   Simple Icons: [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
+- Heroicons: [tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons)
+- Simple Icons: [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
 
 ## Usage
 
@@ -45,10 +45,10 @@ Note that component names can't start with a number, so icons like `1Password` a
 ```html
 <script>
 	// using default exports for single icons
-	import StarSolid from "@inqling/svelte-icons/heroicon-24-solid/star-solid";
+	import StarSolid from '@inqling/svelte-icons/heroicon-24-solid/star-solid';
 
 	// using named exports for multiple icons in a pack
-	import { Github, I500px } from "@inqling/svelte-icons/simple-icons";
+	import { Github, I500px } from '@inqling/svelte-icons/simple-icons';
 </script>
 ```
 
@@ -68,9 +68,9 @@ Icons should behave as you expect most components.
 ```html
 <script>
 	// import 1 icon directly (recommended)
-	import GitHub from "@inqling/svelte-icons/simple-icons/github.svelte";
+	import GitHub from '@inqling/svelte-icons/simple-icons/github.svelte';
 	// import multiple icons from a pack
-	import { Svelte, OnePassword } from "@inqling/svelte-icons/simple-icons";
+	import { Svelte, OnePassword } from '@inqling/svelte-icons/simple-icons';
 </script>
 
 <style>
@@ -94,17 +94,17 @@ Icons should behave as you expect most components.
 
 1. Make sure you have dependencies installed with `pnpm install`.
 2. Run `pnpm icon:update` to clone and import the latest SVG's from the following repositories:
-    1. Heroicons: [@tailwindlabs: heroicons/src](https://github.com/tailwindlabs/heroicons/tree/master/src).
-    2. Simple Icons: [@simple-icons: simple-icons/icons](https://github.com/simple-icons/simple-icons/tree/develop/icons).
+   1. Heroicons: [@tailwindlabs: heroicons/src](https://github.com/tailwindlabs/heroicons/tree/master/src).
+   2. Simple Icons: [@simple-icons: simple-icons/icons](https://github.com/simple-icons/simple-icons/tree/develop/icons).
 3. You'll likely see that a few hundred files have changed. Run `pnpm format` to ensure consistent formatting. Now you'll see that only new or updated icon files have changed.
 
 ### How to I contribute my work?
 
 1. Commit your changes
 2. Run npx changeset to create a new changeset.
-    1. Follow the instructions to create a changeset.
-    2. Adding new icons is considered a `minor` version bump.
-    3. Commit the changeset.
+   1. Follow the instructions to create a changeset.
+   2. Adding new icons is considered a `minor` version bump.
+   3. Commit the changeset.
 3. Open a pull request. Feel free to tag @OllieJT or @Inqling.
 
 ### How do I add new icon packs aside from Heroicons and Simple Icons?
@@ -114,10 +114,10 @@ We're open to adding new icon packs.
 A script should be written for each new pack added - this is fairly simple and is mostly copying and pasting from the existing scripts. In the future I will add more details about writing a "clone script".
 
 1. Place all SVG icons in `/import` with one level of folder structure.
-    - you should not nest svg's more than one level deep
-    - only svg's are imported
-    - svg code is not validated
-    - svg attributes will be standardized
+   - you should not nest svg's more than one level deep
+   - only svg's are imported
+   - svg code is not validated
+   - svg attributes will be standardized
 2. run `yarn import-svg` to convert all SVG files to svelte components.
 3. Generated files can be found at `/src/lib/...`.
 

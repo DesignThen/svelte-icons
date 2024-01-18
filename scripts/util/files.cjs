@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-const fs = require("fs");
-const path = require("path");
-const util = require("./helper.cjs");
+const fs = require('fs');
+const path = require('path');
+const util = require('./helper.cjs');
 
 /**
  * @typedef {import('./types').Task} Task
@@ -17,7 +17,7 @@ function getSourceFolders(pathname) {
 	/** @type {string[]} **/
 	let folders = [];
 
-	fs.readdirSync(pathname, { withFileTypes: true, encoding: "utf-8" }).forEach((value) => {
+	fs.readdirSync(pathname, { withFileTypes: true, encoding: 'utf-8' }).forEach((value) => {
 		if (!value.isDirectory()) return;
 		else folders.push(path.join(pathname, value.name));
 	});
@@ -30,9 +30,9 @@ function getSourceFolders(pathname) {
  * @returns {string}
  */
 function getParent(pathname) {
-	const parts = pathname.split("/");
+	const parts = pathname.split('/');
 	parts.pop();
-	return parts.join("/");
+	return parts.join('/');
 }
 
 /**
@@ -43,8 +43,8 @@ function getSvgAssets(pathname) {
 	/** @type {string[]} **/
 	let assets = [];
 
-	fs.readdirSync(pathname, { withFileTypes: true, encoding: "utf-8" }).forEach((value) => {
-		if (!value.isFile() || !value.name.endsWith(".svg")) return;
+	fs.readdirSync(pathname, { withFileTypes: true, encoding: 'utf-8' }).forEach((value) => {
+		if (!value.isFile() || !value.name.endsWith('.svg')) return;
 		else {
 			assets.push(path.join(pathname, value.name));
 		}
@@ -59,13 +59,13 @@ function getSvgAssets(pathname) {
  * @returns {Task}
  */
 function handleBarrelFile(name, tasks, isRoot = false) {
-	const parent = tasks[0]?.pathname.split(name)[0] || "";
-	const pathname = path.join(parent, name, "index.ts");
+	const parent = tasks[0]?.pathname.split(name)[0] || '';
+	const pathname = path.join(parent, name, 'index.ts');
 
 	const content = tasks
 		.map((t) => {
 			if (isRoot) {
-				let nameRef = t.pathname.replace("/index.ts", "");
+				let nameRef = t.pathname.replace('/index.ts', '');
 				const componentName = util.toComponentName(nameRef, true);
 				const componentPath = util.toRelativePath(nameRef);
 				const line = `export * as ${componentName} from "${componentPath}"`;
@@ -77,7 +77,7 @@ function handleBarrelFile(name, tasks, isRoot = false) {
 				return line;
 			}
 		})
-		.join(";\n");
+		.join(';\n');
 
 	if (!pathname) throw new Error(`Couldn't get pathname for barrel file: ${name}`);
 

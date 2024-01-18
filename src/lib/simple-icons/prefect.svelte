@@ -7,6 +7,6 @@
 	{...$$restProps}
 	fill="currentColor"
 	><title>Prefect</title><path
-		d="M4.29,4L12,8v8l7.71-4V4L12,0L4.29,4z M12,16l-7.71-4v8L12,24V16z"
+		d="M12 8.003 4.288 4.002 12 0l7.713 4v8.004L12 16v8l-7.71-4v-8L12 16V8.003Z"
 	/></svg
 >
