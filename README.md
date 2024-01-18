@@ -101,7 +101,7 @@ Icons should behave as you expect most components.
 ### How to I contribute my work?
 
 1. Commit your changes
-2. Run npx changeset to create a new changeset.
+2. Run `npx changeset` to create a new changeset.
    1. Follow the instructions to create a changeset.
    2. Adding new icons is considered a `minor` version bump.
    3. Commit the changeset.

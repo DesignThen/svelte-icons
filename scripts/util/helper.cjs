@@ -66,17 +66,12 @@ function resolveIconType(value) {
  * @param  {string} value
  */
 function fixNumberName(value) {
-	if (
-		value === "1001tracklists" ||
-		value === "1password" ||
-		value === "3m" ||
-		value === "42" ||
-		value === "4chan" ||
-		value === "4d" ||
-		value === "500px"
-	) {
+	const first_char = value[0] + '';
+
+	if (isNaN(Number(first_char))) return value;
+	else {
 		return `I` + value;
-	} else return value;
+	}
 }
 
 /**
