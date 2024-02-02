@@ -1,5 +1,11 @@
 # @inqling/svelte-icons
 
+## 4.1.1
+
+### Patch Changes
+
+- 9531385: Fix export types for new 16x16 heroicons
+
 ## 4.1.0
 
 ### Minor Changes
