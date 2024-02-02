@@ -54,6 +54,12 @@
 	},
 	"typesVersions": {
 		">4.0": {
+			"heroicon-16-solid": [
+				"./dist/heroicon-16-solid/index.d.ts"
+			],
+			"heroicon-16-solid/*": [
+				"./dist/heroicon-16-solid/*.d.ts"
+			],
 			"heroicon-20-solid": [
 				"./dist/heroicon-20-solid/index.d.ts"
 			],
