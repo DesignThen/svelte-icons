@@ -1,5 +1,11 @@
 # @inqling/svelte-icons
 
+## 5.0.0-next.1
+
+### Major Changes
+
+- 36058f2: Supporting Svelte 5
+
 ## 4.1.2
 
 ### Patch Changes
