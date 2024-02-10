@@ -1,5 +1,12 @@
 # @inqling/svelte-icons
 
+## 4.1.2
+
+### Patch Changes
+
+- 0a7be09: Fix export types
+- 629efb4: Add or update 50 simple-icons
+
 ## 4.1.1
 
 ### Patch Changes
