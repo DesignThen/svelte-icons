@@ -1,0 +1,8 @@
+{
+	"mode": "pre",
+	"tag": "next",
+	"initialVersions": {
+		"@inqling/svelte-icons": "4.1.1"
+	},
+	"changesets": ["tame-timers-watch", "thin-needles-pull"]
+}

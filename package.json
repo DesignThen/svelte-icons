@@ -1,6 +1,6 @@
 {
 	"name": "@inqling/svelte-icons",
-	"version": "4.1.2",
+	"version": "5.0.0-next.0",
 	"license": "MIT",
 	"author": "Ollie Taylor",
 	"homepage": "https://github.com/inqling/svelte-icons#readme",
@@ -24,6 +24,7 @@
 		"format": "prettier --write --plugin-search-dir=. .",
 		"release": "pnpm package && changeset publish",
 		"ts": "tsc --pretty --noImplicitAny --noEmit",
+		"sync": "svelte-kit sync",
 		"clone": "pnpm run clone:simple-icons && pnpm run clone:heroicons && pnpm run clone:boxicons",
 		"clone:boxicons": "./scripts/clone-boxicons.sh > import.clone:boxicons.log",
 		"clone:heroicons": "./scripts/clone-heroicons.sh > import.clone:heroicons.log",
@@ -33,21 +34,22 @@
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.27.1",
-		"@sveltejs/adapter-auto": "^2.1.0",
-		"@sveltejs/kit": "^1.24.0",
+		"@sveltejs/adapter-auto": "^3.1.1",
+		"@sveltejs/kit": "^2.5.0",
 		"@sveltejs/package": "^2.2.2",
-		"@types/node": "^20.5.8",
+		"@sveltejs/vite-plugin-svelte": "^3.0.2",
+		"@types/node": "^20.11.17",
 		"cheerio": "1.0.0-rc.12",
-		"prettier": "^3.0.3",
+		"prettier": "^3.2.5",
 		"prettier-plugin-svelte": "^3.0.3",
 		"publint": "^0.2.2",
-		"svelte": "^4.2.0",
-		"svelte-check": "^3.5.1",
+		"svelte": "^5.0.0-next.52",
+		"svelte-check": "^3.6.4",
 		"svelte-preprocess": "^5.0.4",
-		"svelte2tsx": "^0.6.21",
+		"svelte2tsx": "^0.7.1",
 		"tslib": "^2.6.2",
 		"typescript": "^5.2.2",
-		"vite": "^4.4.9"
+		"vite": "^5.1.1"
 	},
 	"peerDependencies": {
 		"svelte": ">=3.0.0"
