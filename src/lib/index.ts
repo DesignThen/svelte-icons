@@ -1,5 +1,5 @@
-import type { ComponentType, SvelteComponentTyped } from 'svelte';
+import type { ComponentType, SvelteComponent } from 'svelte';
 
-export type SvelteIcon = ComponentType<SvelteComponentTyped>;
+export type SvelteIcon = ComponentType<SvelteComponent>;
 
 export {};

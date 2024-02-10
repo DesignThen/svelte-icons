@@ -1,11 +1,2 @@
-<svg
-	xmlns="http://www.w3.org/2000/svg"
-	width="24"
-	height="24"
-	viewBox="0 0 24 24"
-	style="display: inline-block;"
-	aria-hidden="true"
-	role="img"
-	{...$$restProps}
-	fill="currentColor"><path d="M5 12H3v9h9v-2H5zm7-7h7v7h2V3h-9z" /></svg
->
+<script lang="ts">const { ...restProps } = $props<{ [x: string]: unknown }>();</script>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="display: inline-block;" aria-hidden="true" role="img" {...restProps} fill="currentColor"><path d="M5 12H3v9h9v-2H5zm7-7h7v7h2V3h-9z"/></svg>

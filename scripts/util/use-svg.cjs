@@ -32,12 +32,15 @@ function useSvg(svg, type) {
 	const htmlElement = el
 		.toString()
 		.replace(/#([0-9a-f]{6})/gi, 'currentColor')
-		.replace(`PROPS="PROPS"`, '{...$$$restProps}')
+		.replace(`PROPS="PROPS"`, '{...restProps}')
 		.replace(`OUTLINE="OUTLINE"`, `stroke="currentColor"`)
 		.replace(`SOLID="SOLID"`, `fill="currentColor"`);
 	// .replace("<svg", '<script lang="ts"></script><svg');
 
-	return htmlElement.replace('\t', '').replace('\n', '');
+	const component_content = htmlElement.replace('\t', '').replace('\n', '');
+	const component_init = `<script lang="ts">const { ...restProps } = $props<{ [x: string]: unknown }>();</script>`;
+
+	return component_init + '\n' + component_content;
 }
 
 module.exports = useSvg;

@@ -14,3 +14,4 @@ package-lock.json
 yarn.lock
 
 /src/routes/*.svelte
+/src/lib/**/*.svelte
