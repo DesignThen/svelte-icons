@@ -109,41 +109,70 @@
 			"types": "./dist/index.d.ts",
 			"svelte": "./dist/index.js"
 		},
+		"./heroicon-16-solid": {
+			"types": "./dist/heroicon-16-solid/index.d.ts",
+			"svelte": "./dist/heroicon-16-solid/index.js"
+		},
+		"./heroicon-16-solid/*.svelte": {
+			"types": "./dist/heroicon-16-solid/*.svelte.d.ts",
+			"svelte": "./dist/heroicon-16-solid/*.svelte"
+		},
 		"./heroicon-20-solid": {
 			"types": "./dist/heroicon-20-solid/index.d.ts",
 			"svelte": "./dist/heroicon-20-solid/index.js"
 		},
-		"./heroicon-20-solid/*.svelte": "./dist/heroicon-20-solid/*.svelte",
+		"./heroicon-20-solid/*.svelte": {
+			"types": "./dist/heroicon-20-solid/*.svelte.d.ts",
+			"svelte": "./dist/heroicon-20-solid/*.svelte"
+		},
 		"./heroicon-24-solid": {
 			"types": "./dist/heroicon-24-solid/index.d.ts",
 			"svelte": "./dist/heroicon-24-solid/index.js"
 		},
-		"./heroicon-24-solid/*.svelte": "./dist/heroicon-24-solid/*.svelte",
+		"./heroicon-24-solid/*.svelte": {
+			"types": "./dist/heroicon-24-solid/*.svelte.d.ts",
+			"svelte": "./dist/heroicon-24-solid/*.svelte"
+		},
 		"./heroicon-24-outline": {
 			"types": "./dist/heroicon-24-outline/index.d.ts",
 			"svelte": "./dist/heroicon-24-outline/index.js"
 		},
-		"./heroicon-24-outline/*.svelte": "./dist/heroicon-24-outline/*.svelte",
+		"./heroicon-24-outline/*.svelte": {
+			"types": "./dist/heroicon-24-outline/*.svelte.d.ts",
+			"svelte": "./dist/heroicon-24-outline/*.svelte"
+		},
 		"./simple-icons": {
 			"types": "./dist/simple-icons/index.js",
 			"svelte": "./dist/simple-icons/index.js"
 		},
-		"./simple-icons/*.svelte": "./dist/simple-icons/*.svelte",
+		"./simple-icons/*.svelte": {
+			"types": "./dist/simple-icons/*.svelte.d.ts",
+			"svelte": "./dist/simple-icons/*.svelte"
+		},
 		"./boxicons-logos": {
 			"types": "./dist/boxicons-logos/index.js",
 			"svelte": "./dist/boxicons-logos/index.js"
 		},
-		"./boxicons-logos/*.svelte": "./dist/boxicons-logos/*.svelte",
+		"./boxicons-logos/*.svelte": {
+			"types": "./dist/boxicons-logos/*.svelte.d.ts",
+			"svelte": "./dist/boxicons-logos/*.svelte"
+		},
 		"./boxicons-regular": {
 			"types": "./dist/boxicons-regular/index.js",
 			"svelte": "./dist/boxicons-regular/index.js"
 		},
-		"./boxicons-regular/*.svelte": "./dist/boxicons-regular/*.svelte",
+		"./boxicons-regular/*.svelte": {
+			"types": "./dist/boxicons-regular/*.svelte.d.ts",
+			"svelte": "./dist/boxicons-regular/*.svelte"
+		},
 		"./boxicons-solid": {
 			"types": "./dist/boxicons-solid/index.js",
 			"svelte": "./dist/boxicons-solid/index.js"
 		},
-		"./boxicons-solid/*.svelte": "./dist/boxicons-solid/*.svelte"
+		"./boxicons-solid/*.svelte": {
+			"types": "./dist/boxicons-solid/*.svelte.d.ts",
+			"svelte": "./dist/boxicons-solid/*.svelte"
+		}
 	},
 	"files": [
 		"dist"
