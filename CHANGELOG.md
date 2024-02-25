@@ -1,5 +1,11 @@
 # @designthen/svelte-icons
 
+## 5.0.0-next.2
+
+### Patch Changes
+
+- 9a5678a: Rename package scope from Inqling to DesignThen
+
 ## 5.0.0-next.1
 
 ### Major Changes
