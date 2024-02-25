@@ -32,16 +32,16 @@
 		"icon:import": "node ./scripts/import.cjs > ./import.log",
 		"icon:update": "pnpm run clone && pnpm run icon:import && pnpm format"
 	},
-	"devDependencies": {
+	"dependencies": {
 		"@changesets/cli": "^2.27.1",
 		"@sveltejs/adapter-auto": "^3.1.1",
-		"@sveltejs/kit": "^2.5.0",
-		"@sveltejs/package": "^2.2.2",
+		"@sveltejs/kit": "^2.5.1",
+		"@sveltejs/package": "^2.2.7",
 		"@sveltejs/vite-plugin-svelte": "^3.0.2",
-		"@types/node": "^20.11.17",
+		"@types/node": "^20.11.20",
 		"cheerio": "1.0.0-rc.12",
 		"prettier": "^3.2.5",
-		"prettier-plugin-svelte": "^3.0.3",
+		"prettier-plugin-svelte": "^3.2.1",
 		"publint": "^0.2.2",
 		"svelte": "^5.0.0-next.52",
 		"svelte-check": "^3.6.4",
@@ -49,7 +49,7 @@
 		"svelte2tsx": "^0.7.1",
 		"tslib": "^2.6.2",
 		"typescript": "^5.2.2",
-		"vite": "^5.1.1"
+		"vite": "^5.1.4"
 	},
 	"peerDependencies": {
 		"svelte": ">=3.0.0"
@@ -181,5 +181,5 @@
 	],
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"packageManager": "pnpm@8.11.0"
+	"packageManager": "pnpm@8.15.0"
 }
