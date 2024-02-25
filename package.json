@@ -1,16 +1,16 @@
 {
-	"name": "@inqling/svelte-icons",
+	"name": "@designthen/svelte-icons",
 	"version": "5.0.0-next.1",
 	"license": "MIT",
 	"author": "Ollie Taylor",
-	"homepage": "https://github.com/inqling/svelte-icons#readme",
+	"homepage": "https://github.com/designthen/svelte-icons#readme",
 	"sideEffects": false,
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/inqling/svelte-icons.git"
+		"url": "https://github.com/designthen/svelte-icons.git"
 	},
 	"bugs": {
-		"url": "https://github.com/inqling/svelte-icons/issues"
+		"url": "https://github.com/designthen/svelte-icons/issues"
 	},
 	"type": "module",
 	"scripts": {

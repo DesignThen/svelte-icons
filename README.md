@@ -1,14 +1,14 @@
-# [Svelte Icons](https://www.npmjs.com/package/@inqling/svelte-icons)
+# [Svelte Icons](https://www.npmjs.com/package/@designthen/svelte-icons)
 
 Combines <a href="https://heroicons.com"><strong>Heroicons V2 &rarr;</strong></a> & <a href="https://simpleicons.org/"><strong>Simple Icons &rarr;</strong></a> as easy to use SVG components in your svelte project.
 
-Checkout the <a href="https://github.com/Inqling/svelte-icons/blob/main/CHANGELOG.md">changelog</a> to see what's new.
+Checkout the <a href="https://github.com/DesignThen/svelte-icons/blob/main/CHANGELOG.md">changelog</a> to see what's new.
 
 <p align="center">
-  <img src="https://github.com/inqling/svelte-icons/blob/main/static/banner.png?raw=true" alt="Heroicons + Simple icons, The best icon library combined with brand icons ready for use in Svelte." width="830" height="212">
+  <img src="https://github.com/designthen/svelte-icons/blob/main/static/banner.png?raw=true" alt="Heroicons + Simple icons, The best icon library combined with brand icons ready for use in Svelte." width="830" height="212">
 </p>
 
-![npm](https://img.shields.io/npm/v/@inqling/svelte-icons?style=for-the-badge) ![NPM](https://img.shields.io/npm/l/@inqling/svelte-icons?style=for-the-badge) ![npm](https://img.shields.io/npm/dt/@inqling/svelte-icons?style=for-the-badge) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/Inqling/svelte-icons/main?style=for-the-badge)
+![npm](https://img.shields.io/npm/v/@designthen/svelte-icons?style=for-the-badge) ![NPM](https://img.shields.io/npm/l/@designthen/svelte-icons?style=for-the-badge) ![npm](https://img.shields.io/npm/dt/@designthen/svelte-icons?style=for-the-badge) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/DesignThen/svelte-icons/main?style=for-the-badge)
 
 ---
 
@@ -27,37 +27,37 @@ This library adapts the following repositories for use in Svelte:
 
 ```bash
 # npm
-npm i @inqling/svelte-icons@latest
+npm i @designthen/svelte-icons@latest
 
 #yarn
-yarn add @inqling/svelte-icons@latest
+yarn add @designthen/svelte-icons@latest
 
 #pnpm
-pnpm add @inqling/svelte-icons@latest
+pnpm add @designthen/svelte-icons@latest
 ```
 
 ### Importing Icons
 
-View an example in [/src/routes/+page.svelte](https://github.com/Inqling/svelte-icons/blob/main/src/routes/%2Bpage.svelte)
+View an example in [/src/routes/+page.svelte](https://github.com/DesignThen/svelte-icons/blob/main/src/routes/%2Bpage.svelte)
 
 Note that component names can't start with a number, so icons like `1Password` are prefixed with `I` and renamed to `I1Password`. You might ask why we don't rename icons like `1Password` to `OnePassword`? Well, that's because the original icon is called `1Password` and we want it to be easy to search for with intellisense.
 
 ```html
 <script>
 	// using default exports for single icons
-	import StarSolid from '@inqling/svelte-icons/heroicon-24-solid/star-solid';
+	import StarSolid from '@designthen/svelte-icons/heroicon-24-solid/star-solid';
 
 	// using named exports for multiple icons in a pack
-	import { Github, I500px } from '@inqling/svelte-icons/simple-icons';
+	import { Github, I500px } from '@designthen/svelte-icons/simple-icons';
 </script>
 ```
 
-| Icon Pack         | Import Path                                 |
-| ----------------- | ------------------------------------------- |
-| Heroicons solid   | `@inqling/svelte-icons/heroicon-24-solid`   |
-| Heroicons outline | `@inqling/svelte-icons/heroicon-24-outline` |
-| Heroicons small   | `@inqling/svelte-icons/heroicon-20-solid`   |
-| Simple Icons      | `@inqling/svelte-icons/simple-icons`        |
+| Icon Pack         | Import Path                                    |
+| ----------------- | ---------------------------------------------- |
+| Heroicons solid   | `@designthen/svelte-icons/heroicon-24-solid`   |
+| Heroicons outline | `@designthen/svelte-icons/heroicon-24-outline` |
+| Heroicons small   | `@designthen/svelte-icons/heroicon-20-solid`   |
+| Simple Icons      | `@designthen/svelte-icons/simple-icons`        |
 
 From each pack you can import multiple icons from a pack at once, or import a single icon directly.
 
@@ -68,9 +68,9 @@ Icons should behave as you expect most components.
 ```html
 <script>
 	// import 1 icon directly (recommended)
-	import GitHub from '@inqling/svelte-icons/simple-icons/github.svelte';
+	import GitHub from '@designthen/svelte-icons/simple-icons/github.svelte';
 	// import multiple icons from a pack
-	import { Svelte, OnePassword } from '@inqling/svelte-icons/simple-icons';
+	import { Svelte, OnePassword } from '@designthen/svelte-icons/simple-icons';
 </script>
 
 <style>
@@ -105,7 +105,7 @@ Icons should behave as you expect most components.
    1. Follow the instructions to create a changeset.
    2. Adding new icons is considered a `minor` version bump.
    3. Commit the changeset.
-3. Open a pull request. Feel free to tag @OllieJT or @Inqling.
+3. Open a pull request. Feel free to tag @OllieJT or @DesignThen.
 
 ### How do I add new icon packs aside from Heroicons and Simple Icons?
 

@@ -1,5 +1,5 @@
 ---
-'@inqling/svelte-icons': major
+'@designthen/svelte-icons': major
 ---
 
 Supporting Svelte 5

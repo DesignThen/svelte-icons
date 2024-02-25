@@ -1,4 +1,4 @@
-# @inqling/svelte-icons
+# @designthen/svelte-icons
 
 ## 5.0.0-next.1
 

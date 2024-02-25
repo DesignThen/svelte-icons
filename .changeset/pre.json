@@ -1,10 +1,8 @@
 {
-  "mode": "pre",
-  "tag": "next",
-  "initialVersions": {
-    "@inqling/svelte-icons": "4.1.1"
-  },
-  "changesets": [
-    "cyan-poets-hunt"
-  ]
+	"mode": "pre",
+	"tag": "next",
+	"initialVersions": {
+		"@designthen/svelte-icons": "4.1.1"
+	},
+	"changesets": ["cyan-poets-hunt"]
 }
