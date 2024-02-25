@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> For **Svelte 3** and **Svelte 4** please use `@inqling/svelte-icons`. For **Svelte 5** and beyond, this package has been renamed to `@designthen/svelte-icons`.
+
 # [Svelte Icons](https://www.npmjs.com/package/@designthen/svelte-icons)
 
 Combines <a href="https://heroicons.com"><strong>Heroicons V2 &rarr;</strong></a> & <a href="https://simpleicons.org/"><strong>Simple Icons &rarr;</strong></a> as easy to use SVG components in your svelte project.
