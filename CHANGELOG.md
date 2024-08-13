@@ -1,5 +1,11 @@
 # @designthen/svelte-icons
 
+## 5.0.0-next.3
+
+### Patch Changes
+
+- 2f8a9f4: fix package exports
+
 ## 5.0.0-next.2
 
 ### Minor Changes
