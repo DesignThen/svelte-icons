@@ -4,7 +4,6 @@ const fs = require('fs');
 const path = require('path');
 const util = require('./util/helper.cjs');
 const files = require('./util/files.cjs');
-const useSvg = require('./util/use-svg.cjs');
 
 /**
  * @typedef {import('./util/types').FileMetadata} FileMetadata
@@ -36,20 +35,17 @@ console.log(`🚧 building task list...`);
  */
 function handleIconType(filepath) {
 	if (filepath.includes('/simple-icons/')) return 'solid';
-	if (filepath.includes('/boxicons')) return 'solid';
-	// if (filepath.includes("/solid/")) return "solid";
-	//else if (filepath.includes("/outline/")) return "outline";
 	else return 'auto';
 }
 
 // 1. Handle tasks for SVG files
 folders.forEach((pathname) => {
-	const assets = files.getSvgAssets(pathname);
+	const svg_file_paths = files.get_svg_files(pathname);
 
-	assets.forEach((filepath) => {
+	svg_file_paths.forEach((filepath) => {
 		const metadata = getFileMetadata(filepath);
 		const contentSvg = fs.readFileSync(metadata._input, { encoding: 'utf-8' });
-		const contentSvelte = useSvg(contentSvg, handleIconType(filepath));
+		const contentSvelte = util.format_svg(contentSvg, handleIconType(filepath));
 
 		/** @type {Task} **/
 		const task = {
@@ -116,7 +112,7 @@ function getFileMetadata(filePath) {
 	if (!inputPathname) throw new Error(`Couldn't get FILE from path: ${filePath}`);
 
 	const componentParentPath = path.join(path_to_components, inputParentPathname);
-	const componentFileName = util.toFilename(inputPathname, 'svelte');
+	const componentFileName = util.to_filename(inputPathname, 'svelte');
 	const componentFilePath = path.join(componentParentPath, componentFileName);
 
 	return {
