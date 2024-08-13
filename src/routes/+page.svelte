@@ -1,8 +1,8 @@
 <script>
-	import { Star } from "$lib/heroicon-20-solid";
-	import { PlusCircle } from "$lib/heroicon-24-outline";
-	import { Github, I500px } from "$lib/simple-icons";
-	import Example from "./example.svelte?raw";
+	import { Star } from '$lib/heroicon-20-solid';
+	import { PlusCircle } from '$lib/heroicon-24-outline';
+	import { Github, I500px } from '$lib/simple-icons';
+	import Example from './example.svelte?raw';
 </script>
 
 <section>

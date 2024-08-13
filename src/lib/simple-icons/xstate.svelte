@@ -1,2 +1,16 @@
-<script lang="ts">const { ...restProps } = $props<{ [x: string]: unknown }>();</script>
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display: inline-block;" aria-hidden="true" role="img" {...restProps} fill="currentColor"><title>XState</title><path d="M15.891 0h6.023l-6.085 10.563c-1.853-3.305-1.822-7.32.062-10.563zm6.055 23.999L8.078.001H2.055l6.919 12.015L2.055 24h6.023L12 17.236 15.892 24z"/></svg>
+<script lang="ts">
+	const { ...restProps } = $props<{ [x: string]: unknown }>();
+</script>
+
+<svg
+	viewBox="0 0 24 24"
+	xmlns="http://www.w3.org/2000/svg"
+	style="display: inline-block;"
+	aria-hidden="true"
+	role="img"
+	{...restProps}
+	fill="currentColor"
+	><title>XState</title><path
+		d="M15.891 0h6.023l-6.085 10.563c-1.853-3.305-1.822-7.32.062-10.563zm6.055 23.999L8.078.001H2.055l6.919 12.015L2.055 24h6.023L12 17.236 15.892 24z"
+	/></svg
+>
