@@ -1,8 +1,8 @@
 name: 'CI'
 on:
-  pull_request:
+  pull_request_target:
     branches:
-      - __disabled
+      - main
 
 # cancel in-progress runs on new commits to same PR (gitub.event.number)
 concurrency:
