@@ -39,7 +39,7 @@ function getParent(pathname) {
  * @param  {string} pathname
  * @returns {string[]}
  */
-function getSvgAssets(pathname) {
+function get_svg_files(pathname) {
 	/** @type {string[]} **/
 	let assets = [];
 
@@ -66,13 +66,13 @@ function handleBarrelFile(name, tasks, isRoot = false) {
 		.map((t) => {
 			if (isRoot) {
 				let nameRef = t.pathname.replace('/index.ts', '');
-				const componentName = util.toComponentName(nameRef, true);
-				const componentPath = util.toRelativePath(nameRef);
+				const componentName = util.to_component_name(nameRef, true);
+				const componentPath = util.to_relative_path(nameRef);
 				const line = `export * as ${componentName} from "${componentPath}"`;
 				return line;
 			} else {
-				const componentName = util.toComponentName(t.pathname, false /* , name */);
-				const componentPath = util.toRelativePath(t.pathname);
+				const componentName = util.to_component_name(t.pathname, false /* , name */);
+				const componentPath = util.to_relative_path(t.pathname);
 				const line = `export { default as ${componentName} } from "${componentPath}"`;
 				return line;
 			}
@@ -93,6 +93,6 @@ function handleBarrelFile(name, tasks, isRoot = false) {
 module.exports = {
 	getParent,
 	getSourceFolders,
-	getSvgAssets,
+	get_svg_files,
 	handleBarrelFile,
 };

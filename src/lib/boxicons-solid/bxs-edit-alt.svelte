@@ -1,2 +1,0 @@
-<script lang="ts">const { ...restProps } = $props<{ [x: string]: unknown }>();</script>
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="display: inline-block;" aria-hidden="true" role="img" {...restProps} fill="currentColor"><path d="m16 2.012 3 3L16.713 7.3l-3-3zM4 14v3h3l8.299-8.287-3-3zm0 6h16v2H4z"/></svg>

@@ -25,12 +25,11 @@
 		"release": "pnpm package && changeset publish",
 		"ts": "tsc --pretty --noImplicitAny --noEmit",
 		"sync": "svelte-kit sync",
-		"clone": "pnpm run clone:simple-icons && pnpm run clone:heroicons && pnpm run clone:boxicons",
-		"clone:boxicons": "./scripts/clone-boxicons.sh > import.clone:boxicons.log",
-		"clone:heroicons": "./scripts/clone-heroicons.sh > import.clone:heroicons.log",
-		"clone:simple-icons": "./scripts/clone-simple-icons.sh > import.clone:simple-icons.log",
-		"icon:import": "node ./scripts/import.cjs > ./import.log",
-		"icon:update": "pnpm run clone && pnpm run icon:import && pnpm format"
+		"icon:clone:hi": "./scripts/clone-heroicons.sh > import.clone:heroicons.log",
+		"icon:clone:si": "./scripts/clone-simple-icons.sh > import.clone:simple-icons.log",
+		"icon:clone": "pnpm run icon:clone:si && pnpm run icon:clone:hi",
+		"icon:convert": "node ./scripts/import.cjs > ./import.log",
+		"icon:update": "pnpm run clone && pnpm run icon:convert && pnpm format"
 	},
 	"dependencies": {
 		"@changesets/cli": "^2.27.7",

@@ -1,2 +1,16 @@
-<script lang="ts">const { ...restProps } = $props<{ [x: string]: unknown }>();</script>
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display: inline-block;" aria-hidden="true" role="img" {...restProps} fill="currentColor"><title>APM Terminals</title><path d="M23.8 2.95 0 16.55v4.5L24 9.32V2.95zm.2 10.1-8.87 4.21v3.68l8.87-3.4Z"/></svg>
+<script lang="ts">
+	const { ...restProps } = $props<{ [x: string]: unknown }>();
+</script>
+
+<svg
+	viewBox="0 0 24 24"
+	xmlns="http://www.w3.org/2000/svg"
+	style="display: inline-block;"
+	aria-hidden="true"
+	role="img"
+	{...restProps}
+	fill="currentColor"
+	><title>APM Terminals</title><path
+		d="M23.8 2.95 0 16.55v4.5L24 9.32V2.95zm.2 10.1-8.87 4.21v3.68l8.87-3.4Z"
+	/></svg
+>
