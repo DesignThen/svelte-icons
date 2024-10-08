@@ -1,15 +1,15 @@
 {
-  "mode": "pre",
-  "tag": "next",
-  "initialVersions": {
-    "@designthen/svelte-icons": "4.1.1"
-  },
-  "changesets": [
-    "breezy-clouds-hunt",
-    "cyan-poets-hunt",
-    "fast-otters-deny",
-    "grumpy-masks-hug",
-    "poor-apricots-breathe",
-    "seven-planets-wave"
-  ]
+	"mode": "pre",
+	"tag": "next",
+	"initialVersions": {
+		"@designthen/svelte-icons": "4.1.1"
+	},
+	"changesets": [
+		"breezy-clouds-hunt",
+		"cyan-poets-hunt",
+		"fast-otters-deny",
+		"grumpy-masks-hug",
+		"poor-apricots-breathe",
+		"seven-planets-wave"
+	]
 }

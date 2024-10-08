@@ -29,7 +29,7 @@
 		"icon:clone:si": "./scripts/clone-simple-icons.sh > import.clone:simple-icons.log",
 		"icon:clone": "pnpm run icon:clone:si && pnpm run icon:clone:hi",
 		"icon:convert": "node ./scripts/import.cjs > ./import.log",
-		"icon:update": "pnpm run clone && pnpm run icon:convert && pnpm format"
+		"icon:update": "pnpm run icon:clone && pnpm run icon:convert && pnpm format"
 	},
 	"dependencies": {
 		"@changesets/cli": "^2.27.9",
