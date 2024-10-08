@@ -156,5 +156,5 @@
 	],
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"packageManager": "pnpm@9.7.0"
+	"packageManager": "pnpm@9.9.0"
 }
