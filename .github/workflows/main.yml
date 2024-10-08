@@ -14,14 +14,23 @@ permissions:
 
 jobs:
   Lint:
+    if: github.repository == 'DesignThen/svelte-icons'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v3
-      - uses: actions/setup-node@v4
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: pnpm
-      - run: pnpm install --frozen-lockfile
+
+      - run: corepack enable
+
+      - name: Install deps
+        run: pnpm install
+
       - run: pnpm run lint
+
       - run: pnpm run check
