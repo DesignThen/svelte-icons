@@ -26,6 +26,7 @@ jobs:
           node-version: 20
           cache: pnpm
 
+      # Hoping this will correct the issue with pnpm
       - run: corepack enable
 
       - name: Install deps
