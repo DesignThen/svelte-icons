@@ -26,13 +26,10 @@ jobs:
           node-version: 20
           cache: pnpm
 
-      - name: Setup PNPM
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9.9.0
+      - run: corepack enable
 
       - name: Install deps
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm install
 
       - run: pnpm run lint
 
